@@ -1,8 +1,6 @@
 package org.wecancodeit.com.project.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
@@ -12,6 +10,22 @@ public class CountryModel {
     @GeneratedValue
     private Long id;
     private String countryName;
-    private Collection<IslandChainModel>islandChainModels;
 
+    @ManyToOne
+    private ContinentModel continent;
+
+    public Long getId(){
+        return id;
+    }
+
+    public String getCountryName(){
+        return countryName;
+    }
+
+    public CountryModel(){
+    }
+
+    public CountryModel(String countryName){
+        this.countryName = countryName;
+    }
 }

@@ -1,4 +1,4 @@
 package org.wecancodeit.com.project.Repo;
 
-public class ContinentRepo {
+public interface ContinentRepo {
 }

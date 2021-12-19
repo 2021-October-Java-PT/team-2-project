@@ -14,8 +14,8 @@ public class ContinentModel {
     private Long id;
     private String continentName;
 
-    @OneToMany(mappedBy = "country")
-    private Collection<CountryModel>countryModels;
+    @OneToMany(mappedBy = "continent")
+    private Collection<CountryModel>country;
 
     public Long getId() {
         return id;
@@ -25,8 +25,8 @@ public class ContinentModel {
         return continentName;
     }
 
-    public Collection<CountryModel> getCountryModels(){
-        return countryModels;
+    public Collection<CountryModel> getCountry(){
+        return country;
     }
 
     public ContinentModel(){

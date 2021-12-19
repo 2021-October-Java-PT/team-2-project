@@ -1,4 +1,4 @@
 package org.wecancodeit.com.project.Repo;
 
-public interface CountryRepo {
+public interface IslandChainRepo {
 }
