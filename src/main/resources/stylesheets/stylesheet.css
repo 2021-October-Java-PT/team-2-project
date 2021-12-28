@@ -1,0 +1,104 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    margin: 10px 0px 0px 0px;
+    background-color: #82C8F6;
+    color: #000;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 8px;
+}
+
+#nav {
+    margin: 0px 20% 0px 20%;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+#contactBarBackground {
+    margin: 10px 0px 0px 0px;
+    background-color: #8A961A;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#contactBar {
+    margin: 0px 20% 0px 20%;
+    padding: 5px 5px;
+}
+
+#bannerImage {
+    background-image: url(/src/main/resources/images/island-banner.JPG);
+    background-position: center;
+    background-size: auto;
+    height: 400px;
+    border-radius: 8px;
+}
+
+#bannerText {
+    text-align: center;
+    font-size: 40pt;
+    font-weight: bolder;
+    padding: 90px 0;
+}
+
+#highlightedAdventure {
+    margin: 10px 20% 0px 20%;
+    background-color: #82C8F6;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 8px;
+    height: 400px;
+}
+
+#clientReviews {
+    margin: 10px 0px 0px 0px;
+    background-color: #8A961A;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 8px;
+    height: 500px;
+}
+
+
+#contactUsForm {
+    margin: 10px 20% 0px 20%;
+    background-color: #82C8F6;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 8px;
+    height: 400px;
+}
+
+footer {
+    margin: 10px 0px 0px 0px;
+    background-color: #8A961A;
+    color: #000;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 8px;
+}
+
+#footer {
+    margin: 0px 20% 0px 20%;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+#jacEntFontLightSmall {
+    font-size: 20pt;
+    font-weight: lighter;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFF;
+}
