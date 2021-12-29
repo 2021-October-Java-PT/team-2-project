@@ -45,6 +45,4 @@ public class IslandChainModel {
         return bodyOfWater;
     }
 
-
-
 }

@@ -15,7 +15,7 @@ public class ContinentModel {
     private String continentName;
 
     @OneToMany(mappedBy = "continent")
-    private Collection<CountryModel>country;
+    private Collection<CountryModel> country;
 
     public Long getId() {
         return id;
@@ -25,15 +25,15 @@ public class ContinentModel {
         return continentName;
     }
 
-    public Collection<CountryModel> getCountry(){
+    public Collection<CountryModel> getCountry() {
         return country;
     }
 
-    public ContinentModel(){
+    public ContinentModel() {
 
     }
 
-    public ContinentModel(String continentName){
+    public ContinentModel(String continentName) {
         this.continentName = continentName;
     }
 }
