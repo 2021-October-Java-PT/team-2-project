@@ -1,7 +1,5 @@
 package org.wecancodeit.com.project.Model;
 
-import org.springframework.http.StreamingHttpOutputMessage;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -16,10 +14,10 @@ public class IslandChainModel {
     private String islandName;
     private CountryModel country;
     @ManyToOne
-    private BodyOfWaterModel bodyOfWater;
+    private WaterBodyModel bodyOfWater;
 
 
-    public IslandChainModel(String islandName, CountryModel country, BodyOfWaterModel bodyOfWater) {
+    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel bodyOfWater) {
         this.islandName = islandName;
         this.country = country;
         this.bodyOfWater = bodyOfWater;
@@ -41,7 +39,7 @@ public class IslandChainModel {
         return country;
     }
 
-    public BodyOfWaterModel getBodyOfWater() {
+    public WaterBodyModel getBodyOfWater() {
         return bodyOfWater;
     }
 

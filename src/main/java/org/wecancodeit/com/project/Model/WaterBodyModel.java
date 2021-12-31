@@ -5,25 +5,25 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class BodyOfWaterModel {
+public class WaterBodyModel {
     @Id
     @GeneratedValue
     private Long id;
-    private String bodyOfWaterName;
+    private String waterBodyName;
 
     public Long getId() {
         return id;
     }
 
-    public String getBodyOfWaterName() {
-        return bodyOfWaterName;
+    public String getWaterBodyName() {
+        return waterBodyName;
     }
 
-    public BodyOfWaterModel(String bodyOfWaterName) {
-        this.bodyOfWaterName = bodyOfWaterName;
+    public WaterBodyModel(String waterBodyName) {
+        this.waterBodyName = waterBodyName;
     }
 
-    public BodyOfWaterModel() {
+    public WaterBodyModel() {
     }
 
 }
