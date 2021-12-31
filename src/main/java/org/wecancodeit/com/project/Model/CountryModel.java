@@ -14,18 +14,18 @@ public class CountryModel {
     @ManyToOne
     private ContinentModel continent;
 
-    public Long getId(){
+    public Long getId() {
         return id;
     }
 
-    public String getCountryName(){
+    public String getCountryName() {
         return countryName;
     }
 
-    public CountryModel(){
+    public CountryModel() {
     }
 
-    public CountryModel(String countryName){
+    public CountryModel(String countryName) {
         this.countryName = countryName;
     }
 }

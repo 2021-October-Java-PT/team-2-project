@@ -19,29 +19,29 @@ public class IslandChainModel {
     private BodyOfWaterModel bodyOfWater;
 
 
-    public IslandChainModel(String islandName, CountryModel country, BodyOfWaterModel bodyOfWater){
+    public IslandChainModel(String islandName, CountryModel country, BodyOfWaterModel bodyOfWater) {
         this.islandName = islandName;
         this.country = country;
         this.bodyOfWater = bodyOfWater;
     }
 
-    public IslandChainModel(){
+    public IslandChainModel() {
 
     }
 
-    public Long getId(){
+    public Long getId() {
         return id;
     }
 
-    public String getIslandName(){
+    public String getIslandName() {
         return islandName;
     }
 
-    public CountryModel getCountry(){
+    public CountryModel getCountry() {
         return country;
     }
 
-    public BodyOfWaterModel getBodyOfWater(){
+    public BodyOfWaterModel getBodyOfWater() {
         return bodyOfWater;
     }
 
