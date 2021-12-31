@@ -1,39 +1,38 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FFF;
+}
+
+#contactBarBackground {
+    background-color: #bfdff9;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+#contactBar {
+    margin: 0px 20% 0px 20%;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: large;
 }
 
 nav {
-    margin: 10px 0px 0px 0px;
-    background-color: #82C8F6;
+    background-color: #7c862b;
     color: #000;
-    border-style: solid;
-    border-color: #000;
-    border-radius: 8px;
+    padding: 5px 0px 5px 0px;
 }
 
 #nav {
     margin: 0px 20% 0px 20%;
     padding: 5px 5px;
     text-align: center;
-}
-
-#contactBarBackground {
-    margin: 10px 0px 0px 0px;
-    background-color: #8A961A;
-    border-style: solid;
-    border-color: #000;
-    border-radius: 8px;
-    text-align: center;
-}
-
-#contactBar {
-    margin: 0px 20% 0px 20%;
-    padding: 5px 5px;
+    font-size: large;
 }
 
 #bannerImage {
-    background-image: url(/src/main/resources/images/island-banner.JPG);
+    background-image: url(/src/main/resources/images/banner-image.JPG);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: auto;
     height: 400px;
     border-radius: 8px;
@@ -47,52 +46,43 @@ nav {
 }
 
 #spotlightTrip {
-    margin: 10px 20% 0px 20%;
-    background-color: #82C8F6;
-    border-style: solid;
-    border-color: #000;
-    border-radius: 8px;
+    margin: 10px 20% 10px 20%;
     height: auto;
     display: grid;
     grid-template-columns: 35% 1fr;
-    grid-template-areas: 
-    "spotlightTripImage spotlightTripText";
+    grid-template-areas:
+        "spotlightTripImage spotlightTripText";
 }
 
-#spotlightTripImage{
+#spotlightTripImage {
     grid-area: "spotlightTripImage";
+    background-image: url(/src/main/resources/images/farris-wheel-image.JPG);
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
 }
 
-#spotlightTripText{
+#spotlightTripText {
     grid-area: "spotlightTripText";
+    padding: 0px 10px 0px 10px;
 }
 
 #clientReviews {
-    margin: 10px 0px 0px 0px;
-    background-color: #8A961A;
-    border-style: solid;
-    border-color: #000;
-    border-radius: 8px;
+    margin: 0px 0px 0px 0px;
+    background-color: #7c862b;
     height: 500px;
 }
 
 
 #contactUsForm {
-    margin: 10px 20% 0px 20%;
-    background-color: #82C8F6;
-    border-style: solid;
-    border-color: #000;
-    border-radius: 8px;
+    margin: 10px 20% 10px 20%;
     height: 400px;
 }
 
 footer {
-    margin: 10px 0px 0px 0px;
-    background-color: #8A961A;
+    margin: 0px 0px 0px 0px;
+    background-color: #7c862b;
     color: #000;
-    border-style: solid;
-    border-color: #000;
-    border-radius: 8px;
 }
 
 #footer {
@@ -115,25 +105,21 @@ a:hover {
     color: #FFF;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
     #spotlightTrip {
         margin: 10px 20% 0px 20%;
-        background-color: #82C8F6;
-        border-style: solid;
-        border-color: #000;
-        border-radius: 8px;
         height: auto;
         display: grid;
         grid-template-rows: 35% 1fr;
-        grid-template-areas: 
-        "spotlightTripImage spotlightTripText";
+        grid-template-areas:
+            "spotlightTripImage spotlightTripText";
     }
-    
-    #spotlightTripImage{
+
+    #spotlightTripImage {
         grid-area: "spotlightTripImage";
     }
-    
-    #spotlightTripText{
+
+    #spotlightTripText {
         grid-area: "spotlightTripText";
     }
 }
