@@ -12,23 +12,23 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.Optional;
 
-//@Controller
+@Controller
 public class ContinentController {
-//
-//    @Resource
-//    private ContinentRepo continentRepo;
-//
-//    @RequestMapping("/continents")
-//    public String displayContinents(Model model) {
-//        model.addAttribute("continents", continentRepo.findAll());
-//        return "continentsTemplate";
-//    }
-//
-//    @RequestMapping("/continents/{id}")
-//    public String displaySingleContinent(@PathVariable Long id, Model model) {
-//        Optional<ContinentModel> retrievedContinent = continentRepo.findById(id);
-//        ContinentModel foundContinent = retrievedContinent.get();
-//        model.addAttribute("continent", foundContinent);
-//        return "continentTemplate";
-//    }
+
+    @Resource
+    private ContinentRepo continentRepo;
+
+    @RequestMapping("/continents")
+    public String displayContinents(Model model) {
+        model.addAttribute("continents", continentRepo.findAll());
+        return "continentsTemplate";
+    }
+
+    @RequestMapping("/continents/{id}")
+    public String displaySingleContinent(@PathVariable Long id, Model model) {
+        Optional<ContinentModel> retrievedContinent = continentRepo.findById(id);
+        ContinentModel foundContinent = retrievedContinent.get();
+        model.addAttribute("continent", foundContinent);
+        return "continentTemplate";
+    }
 }
