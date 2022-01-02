@@ -17,7 +17,7 @@ public class CountryController {
     @Resource
     private CountryRepo countryRepo;
 
-
+    // update spelling issues
     @RequestMapping("countrys")
     public String displayCountrys(Model model){
         model.addAttribute("countrys", countryRepo.findAll());
