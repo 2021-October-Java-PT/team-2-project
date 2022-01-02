@@ -1,4 +1,8 @@
 package org.wecancodeit.com.project.Repo;
 
-public interface IslandChainRepo {
+import org.springframework.data.repository.CrudRepository;
+import org.wecancodeit.com.project.Model.IslandChainModel;
+
+public interface IslandChainRepo extends CrudRepository<IslandChainModel,Long> {
+    IslandChainModel findIslandChainByName(String islandName);
 }
