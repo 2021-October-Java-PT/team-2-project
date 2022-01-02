@@ -10,6 +10,7 @@ public class CountryModel {
     @GeneratedValue
     private Long id;
     private String countryName;
+    private String fromContinent;
 
     @ManyToOne
     private ContinentModel continent;
@@ -22,10 +23,16 @@ public class CountryModel {
         return countryName;
     }
 
+    public String getFromContinent(){
+        return fromContinent;
+    }
+
+
     public CountryModel(){
     }
 
-    public CountryModel(String countryName){
+    public CountryModel(String countryName, String fromContinent){
         this.countryName = countryName;
+        this.fromContinent = fromContinent;
     }
 }
