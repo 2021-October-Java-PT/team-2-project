@@ -50,7 +50,8 @@ nav {
 }
 
 #waterBodyInformation, #countryInformation, #continentInformation, 
-#destinationsInformation, #allBodiesOfWaterInformation {
+#destinationsInformation, #allBodiesOfWaterInformation, #allContinentsInformation,
+#allCountriesInformation, #allIslandChainsInformation {
     margin: 0px 20% 0px 20%;
     height: 400px;
     display: grid;
@@ -63,7 +64,8 @@ nav {
 }
 
 #waterBodyMap, #countryMap, #continentMap, 
-#destinationsMap, #allBodiesOfWaterMap {
+#destinationsMap, #allBodiesOfWaterMap, #allContinentsMap,
+#allCountriesMap, #allIslandChainsMap, #allIslandChainsMap {
     grid-area: "map";
     background-position: center;
     background-size: cover;
@@ -71,7 +73,8 @@ nav {
 }
 
 #waterBodySummary, #countrySummary, #continentSummary, 
-#destinationsSummary, #allBodiesOfWaterSummary  {
+#destinationsSummary, #allBodiesOfWaterSummary, #allContinentsSummary,
+#allCountriesSummary, #allContinentsSummary  {
     grid-area: "summary";
 }
 
@@ -82,12 +85,14 @@ iframe {
 }
 
 #islandsInWaterBody, #islandsInCountry, #countriesInContinent, 
-#destinationsOnTerraFirma, #allBodiesOfWaterOnTerraFirma {
+#destinationsOnTerraFirma, #allBodiesOfWaterOnTerraFirma, #allContinentsOnTerraFirma,
+#allCountriesOnTerraFirma, #allIslandChainsOnTerraFirma {
     background-color: #bfdff9;
 }
 
 #listOfIslandChains, #listOfCountries, 
-#listOfDestinations, #listOfBodiesOfWaterOnTerraFirma {
+#listOfDestinations, #listOfBodiesOfWaterOnTerraFirma, #listAllContinentsOnTerraFirma,
+#listOfAllCountriesOnTerraFirma,#listAllIslandChainsOnTerraFirma {
     margin: 0px 20% 0px 20%;
     padding: 30px 30px;
     background-color: #bfdff9;
