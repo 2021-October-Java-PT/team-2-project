@@ -15,11 +15,11 @@ public class CountryModel {
     @ManyToOne
     private ContinentModel continent;
 
-    public Long getId(){
+    public Long getId() {
         return id;
     }
 
-    public String getCountryName(){
+    public String getCountryName() {
         return countryName;
     }
 
@@ -32,6 +32,11 @@ public class CountryModel {
     }
 
     public CountryModel(String countryName, String fromContinent){
+
+    public CountryModel() {
+    }
+
+    public CountryModel(String countryName) {
         this.countryName = countryName;
         this.fromContinent = fromContinent;
     }
