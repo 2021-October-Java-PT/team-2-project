@@ -12,37 +12,38 @@ public class CombinationModel {
     private Long id;
     private ContinentModel continent;
     private CountryModel country;
-    private BodyOfWaterModel bodyOfWater;
+    private WaterBodyModel bodyOfWater;
     private IslandChainModel islandChain;
 
-    public Long getId(){
+    public Long getId() {
         return id;
     }
-    public ContinentModel getContinent(){
+
+    public ContinentModel getContinent() {
         return continent;
     }
 
-    public CountryModel getCountry(){
+    public CountryModel getCountry() {
         return country;
     }
 
-    public BodyOfWaterModel getBodyOfWater(){
+    public WaterBodyModel getBodyOfWater() {
         return bodyOfWater;
     }
 
-    public IslandChainModel getIslandChain(){
+    public IslandChainModel getIslandChain() {
         return islandChain;
     }
 
 
-    public CombinationModel (ContinentModel continent, CountryModel country, BodyOfWaterModel bodyOfWater, IslandChainModel islandChain){
+    public CombinationModel(ContinentModel continent, CountryModel country, WaterBodyModel bodyOfWater, IslandChainModel islandChain) {
         this.continent = continent;
         this.country = country;
         this.bodyOfWater = bodyOfWater;
         this.islandChain = islandChain;
     }
 
-    public CombinationModel(){
+    public CombinationModel() {
 
 
     }
