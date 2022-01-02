@@ -12,7 +12,7 @@ public class CombinationModel {
     private Long id;
     private ContinentModel continent;
     private CountryModel country;
-    private WaterBodyModel bodyOfWater;
+    private WaterBodyModel waterBody;
     private IslandChainModel islandChain;
 
     public Long getId() {
@@ -28,7 +28,7 @@ public class CombinationModel {
     }
 
     public WaterBodyModel getBodyOfWater() {
-        return bodyOfWater;
+        return waterBody;
     }
 
     public IslandChainModel getIslandChain() {
@@ -36,10 +36,10 @@ public class CombinationModel {
     }
 
 
-    public CombinationModel(ContinentModel continent, CountryModel country, WaterBodyModel bodyOfWater, IslandChainModel islandChain) {
+    public CombinationModel(ContinentModel continent, CountryModel country, WaterBodyModel waterBody, IslandChainModel islandChain) {
         this.continent = continent;
         this.country = country;
-        this.bodyOfWater = bodyOfWater;
+        this.waterBody = waterBody;
         this.islandChain = islandChain;
     }
 

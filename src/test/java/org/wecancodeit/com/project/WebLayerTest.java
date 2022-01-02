@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class WebLayerTest {
 
     @MockBean
-    private WaterBodyRepo waterBodyRepo;
+    private WaterBodyRepo waterBodyRepository;
 
     @Autowired
     private MockMvc mockMvc;
@@ -37,7 +37,7 @@ public class WebLayerTest {
     @Test
     public void shouldBeOkForASingleBodyOfWaterEndpointWithBodyOfWaterTemplateAndBodyOfWaterModelAttribute() throws Exception {
         WaterBodyModel testBodyOfWater = new WaterBodyModel("Caribbean");
-        when(waterBodyRepo.findBodyOfWaterByLocation("Caribbean")).thenReturn(testBodyOfWater);
+        when(waterBodyRepository.findWaterBodyModelByWaterBodyName("Caribbean")).thenReturn(testBodyOfWater);
         mockMvc.perform(get("/waterBodies/Caribbean"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("waterBodyTemplate"))

@@ -12,7 +12,10 @@ public class IslandChainModel {
     @GeneratedValue
     private Long id;
     private String islandName;
+
+    @ManyToOne
     private CountryModel country;
+
     @ManyToOne
     private WaterBodyModel bodyOfWater;
 

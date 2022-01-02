@@ -22,4 +22,3 @@ public class Populator implements CommandLineRunner {
     }
 }
 
-

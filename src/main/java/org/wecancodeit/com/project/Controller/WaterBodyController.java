@@ -22,9 +22,10 @@ public class WaterBodyController {
         return "allWaterBodiesTemplate";
     }
 
-    @GetMapping("/waterBodies/{location}")
-    public String displaySingleBodyOfWater(@PathVariable String location, Model model) {
-        WaterBodyModel retrievedWaterBody = (WaterBodyModel) waterBodyRepository.findBodyOfWaterByLocation(location);
+
+    @GetMapping("/waterBodies/{waterBodyName}")
+    public String displaySingleBodyOfWater(@PathVariable String waterBodyName, Model model) {
+        WaterBodyModel retrievedWaterBody = waterBodyRepository.findWaterBodyModelByWaterBodyName(waterBodyName);
         model.addAttribute("waterBody", retrievedWaterBody);
         return "waterBodyTemplate";
     }
