@@ -9,6 +9,7 @@ import org.wecancodeit.com.project.Model.WaterBodyModel;
 import org.wecancodeit.com.project.Repo.WaterBodyRepo;
 
 import javax.annotation.Resource;
+import java.util.Collections;
 
 @Controller
 public class WaterBodyController {
@@ -22,9 +23,16 @@ public class WaterBodyController {
         return "allWaterBodiesTemplate";
     }
 
-    @GetMapping("/waterBodies/{location}")
-    public String displaySingleBodyOfWater(@PathVariable String location, Model model) {
-        WaterBodyModel retrievedWaterBody = (WaterBodyModel) waterBodyRepository.findBodyOfWaterByLocation(location);
+//    @GetMapping("/waterBodies/{id}")
+//    public String displaySingleBodyOfWater(@PathVariable Long id, Model model) {
+//        WaterBodyModel retrievedWaterBody = (WaterBodyModel) waterBodyRepository.findAllById(Collections.singleton(id));
+//        model.addAttribute("waterBody", retrievedWaterBody);
+//        return "waterBodyTemplate";
+//    }
+
+    @GetMapping("/waterBodies/{waterBodyName}")
+    public String displaySingleBodyOfWater(@PathVariable String waterBodyName, Model model) {
+        WaterBodyModel retrievedWaterBody = (WaterBodyModel) waterBodyRepository.findWaterBodyModelByWaterBodyName(waterBodyName);
         model.addAttribute("waterBody", retrievedWaterBody);
         return "waterBodyTemplate";
     }
