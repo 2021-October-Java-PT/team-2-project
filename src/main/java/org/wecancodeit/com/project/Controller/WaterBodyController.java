@@ -24,7 +24,7 @@ public class WaterBodyController {
 
     @GetMapping("/waterBodies/{location}")
     public String displaySingleBodyOfWater(@PathVariable String location, Model model) {
-        WaterBodyModel retrievedWaterBody = (WaterBodyModel) waterBodyRepository.findWaterBodyModelByLocation(location);
+        WaterBodyModel retrievedWaterBody = (WaterBodyModel) waterBodyRepository.findBodyOfWaterByLocation(location);
         model.addAttribute("waterBody", retrievedWaterBody);
         return "waterBodyTemplate";
     }
