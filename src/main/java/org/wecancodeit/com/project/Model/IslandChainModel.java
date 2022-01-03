@@ -17,13 +17,13 @@ public class IslandChainModel {
     private CountryModel country;
 
     @ManyToOne
-    private WaterBodyModel bodyOfWater;
+    private WaterBodyModel waterBody;
 
 
-    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel bodyOfWater) {
+    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel waterBody) {
         this.islandName = islandName;
         this.country = country;
-        this.bodyOfWater = bodyOfWater;
+        this.waterBody = waterBody;
     }
 
     public IslandChainModel() {
@@ -42,8 +42,8 @@ public class IslandChainModel {
         return country;
     }
 
-    public WaterBodyModel getBodyOfWater() {
-        return bodyOfWater;
+    public WaterBodyModel getWaterBody() {
+        return waterBody;
     }
 
 }

@@ -1,8 +1,7 @@
 package org.wecancodeit.com.project.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Collection;
 import java.util.Objects;
 
 @Entity
@@ -12,12 +11,19 @@ public class WaterBodyModel {
     private Long id;
     private String waterBodyName;
 
+    @OneToMany(mappedBy = "waterBody")
+    private Collection<IslandChainModel> islandChains;
+
     public Long getId() {
         return id;
     }
 
     public String getWaterBodyName() {
         return waterBodyName;
+    }
+
+    public Collection<IslandChainModel> getIslandChains(){
+        return islandChains;
     }
 
     public WaterBodyModel(String waterBodyName) {
