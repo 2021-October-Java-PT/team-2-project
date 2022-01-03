@@ -10,6 +10,7 @@ import org.wecancodeit.com.project.Model.IslandChainModel;
 import org.wecancodeit.com.project.Repo.IslandChainRepo;
 
 import javax.annotation.Resource;
+import java.util.Optional;
 
 @Controller
 public class IslandChainController  {
@@ -23,11 +24,19 @@ public class IslandChainController  {
         return "islandChainTemplate";
     }
 
+    @RequestMapping("/island-chains/{id}")
+    public String displaySingleIslandChain(@PathVariable Long id, Model model) {
+        Optional<IslandChainModel> retrievedIslandChain = islandChainRepo.findById(id);
+        IslandChainModel foundIslandChain = retrievedIslandChain.get();
+        model.addAttribute("island-chain", foundIslandChain);
+        return "islandChainTemplate";
+    }
+
     @GetMapping("/island-chains/{islandName}")
     public String displaySingleCampus(@PathVariable String islandName, Model model){
-        IslandChainModel retrievedIslandChain = islandChainRepo.findIslandChainByName(islandName);
+        IslandChainModel retrievedIslandChain = islandChainRepo.findIslandChainModelByIslandName(islandName);
         model.addAttribute("island-chain",retrievedIslandChain);
-        return "islandChainView";
+        return "islandChainTemplate";
     }
 
 }
