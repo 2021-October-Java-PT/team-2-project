@@ -1,9 +1,6 @@
 package org.wecancodeit.com.project.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
@@ -13,10 +10,12 @@ public class CountryModel {
     @GeneratedValue
     private Long id;
     private String countryName;
-    private String fromContinent;
 
     @ManyToOne
     private ContinentModel continent;
+
+    @OneToMany(mappedBy = "country")
+    private Collection<IslandChainModel> islandChains;
 
     public Long getId() {
         return id;
@@ -26,21 +25,15 @@ public class CountryModel {
         return countryName;
     }
 
-    public String getFromContinent(){
-        return fromContinent;
+    public Collection<IslandChainModel> getIslandChains(){
+        return islandChains;
     }
-
-
-    public CountryModel(){
-    }
-
-    public CountryModel(String countryName, String fromContinent){
 
     public CountryModel() {
     }
 
     public CountryModel(String countryName) {
         this.countryName = countryName;
-        this.fromContinent = fromContinent;
     }
 }
+
