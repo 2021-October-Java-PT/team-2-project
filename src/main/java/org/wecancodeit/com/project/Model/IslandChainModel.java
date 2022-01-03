@@ -19,6 +19,11 @@ public class IslandChainModel {
     @ManyToOne
     private WaterBodyModel waterBody;
 
+//    Madison's test constructor
+//    public IslandChainModel(String islandName, WaterBodyModel waterBody) {
+//        this.islandName = islandName;
+//        this.waterBody = waterBody;
+//    }
 
     public IslandChainModel(String islandName, CountryModel country, WaterBodyModel waterBody) {
         this.islandName = islandName;

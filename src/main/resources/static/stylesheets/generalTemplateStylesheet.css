@@ -30,7 +30,7 @@ nav {
 }
 
 #bannerImage {
-    background-image: url(/src/main/resources/images/banner-image.JPG);
+    background-image: url(/images/banner-image.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
