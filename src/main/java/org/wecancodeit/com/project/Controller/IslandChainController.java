@@ -24,14 +24,6 @@ public class IslandChainController  {
         return "islandChainTemplate";
     }
 
-    @RequestMapping("/island-chains/{id}")
-    public String displaySingleIslandChain(@PathVariable Long id, Model model) {
-        Optional<IslandChainModel> retrievedIslandChain = islandChainRepo.findById(id);
-        IslandChainModel foundIslandChain = retrievedIslandChain.get();
-        model.addAttribute("island-chain", foundIslandChain);
-        return "islandChainTemplate";
-    }
-
     @GetMapping("/island-chains/{islandName}")
     public String displaySingleCampus(@PathVariable String islandName, Model model){
         IslandChainModel retrievedIslandChain = islandChainRepo.findIslandChainModelByIslandName(islandName);
