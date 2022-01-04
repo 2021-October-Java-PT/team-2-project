@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/main/resources/stylesheets/generalTemplateStylesheet.css">
+    <link rel="stylesheet" href="/stylesheets/generalTemplateStylesheet.css">
     <title>Country Template</title>
 </head>
 
@@ -19,7 +19,7 @@
                 href="">Contact</a></div>
     </nav>
     <div id="bannerImage">
-        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br>Canada
+        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br><h1 th:text="${country.countryName}">Location</h1>
         </div>
     </div>
     <div id="countryInformation">
@@ -46,10 +46,10 @@
     <div id="islandsInCountry">
      <div id="listOfIslandChains">
         <ul>
-            <li>Puerto Rico</li>
-            <li>Jamaica</li>
-            <li>Bermuda</li>
-            <li>Cuba</li>
+            <li class="country-list-links__country" th:each="islandChain:${country.islandChains}">
+                <a class="country-list-link" th:href="@{'/country/'+ ${islandChain.id}}"
+                   th:text="${islandChain.islandName}">List Coming Soon!</a>
+            </li>
         </ul>
      </div>
     </div>

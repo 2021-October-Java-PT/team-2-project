@@ -26,7 +26,7 @@ public class IslandChainController  {
     }
 
     @RequestMapping("/island-chains/{id}")
-    public String displaySingleIslandCHain(@PathVariable long id, Model model){
+    public String displaySingleIslandChain(@PathVariable long id, Model model){
         Optional<IslandChainModel> retrievedIslandChain = islandChainRepo.findById(id);
         IslandChainModel foundIslandChain = retrievedIslandChain.get();
         model.addAttribute("islandChain", foundIslandChain);
