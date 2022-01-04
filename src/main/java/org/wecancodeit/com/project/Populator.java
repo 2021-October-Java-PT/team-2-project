@@ -19,7 +19,7 @@ public class Populator implements CommandLineRunner {
     private ContinentRepo continentRepo;
 
     @Resource
-    private WaterBodyRepo waterBodyRepository;
+    private WaterBodyRepo waterBodyRepo;
 
     @Resource
     private IslandChainRepo islandChainRepo;
@@ -51,7 +51,7 @@ public class Populator implements CommandLineRunner {
 
         //Water Bodies
         WaterBodyModel caribbean = new WaterBodyModel("Caribbean");
-        waterBodyRepository.save(caribbean);
+        waterBodyRepo.save(caribbean);
 
 
         //Island Chains
