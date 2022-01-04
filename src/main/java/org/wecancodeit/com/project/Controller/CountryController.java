@@ -18,13 +18,13 @@ public class CountryController {
     private CountryRepo countryRepo;
 
     // update spelling issues
-    @RequestMapping("/countries")
-    public String displayCountries(Model model){
+    @RequestMapping("/country")
+    public String displayCountries(Model model) {
         model.addAttribute("countries", countryRepo.findAll());
         return "allCountriesTemplate";
     }
 
-    @RequestMapping("/countries/{id}")
+    @RequestMapping("/country/{id}")
     public String displaySingleCountry(@PathVariable long id, Model model) {
         Optional<CountryModel> retrievedCountry = countryRepo.findById(id);
         CountryModel foundCountry = retrievedCountry.get();

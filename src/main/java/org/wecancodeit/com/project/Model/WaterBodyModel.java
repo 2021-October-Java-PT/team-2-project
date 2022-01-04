@@ -11,6 +11,7 @@ public class WaterBodyModel {
     private String waterBodyName;
     @Lob
     private String waterBodyDescription;
+    @Lob
     private String waterBodyMapUrl;
 
 
@@ -33,7 +34,7 @@ public class WaterBodyModel {
         return waterBodyMapUrl;
     }
 
-    public Collection<IslandChainModel> getIslandChains(){
+    public Collection<IslandChainModel> getIslandChains() {
         return islandChains;
     }
 

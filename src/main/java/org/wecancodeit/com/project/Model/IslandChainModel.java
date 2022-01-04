@@ -19,21 +19,6 @@ public class IslandChainModel {
     @ManyToOne
     private WaterBodyModel waterBody;
 
-//    Madison's test constructor
-//    public IslandChainModel(String islandName, WaterBodyModel waterBody) {
-//        this.islandName = islandName;
-//        this.waterBody = waterBody;
-//    }
-
-    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel waterBody) {
-        this.islandName = islandName;
-        this.country = country;
-        this.waterBody = waterBody;
-    }
-
-    public IslandChainModel() {
-
-    }
 
     public Long getId() {
         return id;
@@ -51,4 +36,12 @@ public class IslandChainModel {
         return waterBody;
     }
 
+    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel waterBody) {
+        this.islandName = islandName;
+        this.country = country;
+        this.waterBody = waterBody;
+    }
+
+    public IslandChainModel() {
+    }
 }
