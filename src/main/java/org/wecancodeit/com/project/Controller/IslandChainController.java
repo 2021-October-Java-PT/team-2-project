@@ -14,19 +14,19 @@ import javax.annotation.Resource;
 import java.util.Optional;
 
 @Controller
-public class IslandChainController  {
+public class IslandChainController {
 
     @Resource
     private IslandChainRepo islandChainRepo;
 
     @RequestMapping("/island-chains")
-    public String displayIslandChains(Model model){
+    public String displayIslandChains(Model model) {
         model.addAttribute("island-chains", islandChainRepo.findAll());
         return "islandChainTemplate";
     }
 
     @RequestMapping("/island-chains/{id}")
-    public String displaySingleIslandChain(@PathVariable long id, Model model){
+    public String displaySingleIslandChain(@PathVariable long id, Model model) {
         Optional<IslandChainModel> retrievedIslandChain = islandChainRepo.findById(id);
         IslandChainModel foundIslandChain = retrievedIslandChain.get();
         model.addAttribute("islandChain", foundIslandChain);

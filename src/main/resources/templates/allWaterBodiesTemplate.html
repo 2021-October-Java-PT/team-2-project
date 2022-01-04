@@ -19,19 +19,21 @@
                 href="">Contact</a></div>
     </nav>
     <div id="bannerImage">
-        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br>Search for Your Destination by
-            the Body of Water
+        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br>Search for Your Destination
+            </br>by Waterway
         </div>
     </div>
     <div id="allBodiesOfWaterInformation">
         <div id="allBodiesOfWaterMap">
             <iframe
-                    src="https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#0.51/0/-13.1"
+                    src="https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#0.62/30.3/-27.5"
                     title="Monochrome">
             </iframe>
         </div>
         <div id="allBodiesOfWaterSummary">
-            <p>Wanting find your next adventure is a specific water region? Check out our list below to see where we offer adventures in various oceans, seas and waterways!</p>
+            <p>Wanting find your next adventure is a specific water region?</p>
+
+            <p>Check out our list below to see where we offer adventures in various oceans, seas and waterways!</p>
         </div>
     </div>
     <div id="allBodiesOfWaterOnTerraFirma">
@@ -39,7 +41,7 @@
             <h1>Water Region</h1>
             <ul>
                 <li th:each="waterBodies:${waterBodies}">
-                    <a class="water-body-list-link" th:href="@{'/waterBody/'+ ${waterBodies.id}}"
+                    <a class="water-body-list-link" th:href="@{'/water-body/'+ ${waterBodies.id}}"
                        th:text="${waterBodies.waterBodyName}">List Coming Soon!</a>
                 </li>
             </ul>

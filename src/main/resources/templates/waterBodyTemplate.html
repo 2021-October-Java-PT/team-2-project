@@ -20,7 +20,8 @@
                 href="">Contact</a></div>
     </nav>
     <div id="bannerImage">
-        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br><h1 th:text="${waterBody.waterBodyName}">Location</h1>
+        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br>
+            <h1 th:text="${waterBody.waterBodyName}">Location</h1>
         </div>
     </div>
     <div id="waterBodyInformation">
@@ -38,7 +39,7 @@
         <div id="listOfIslandChains">
             <ul>
                 <li class="water-body-list-links__water-body" th:each="islandChain:${waterBody.islandChains}">
-                    <a class="water-body-list-link" th:href="@{'/waterBody/'+ ${islandChain.id}}"
+                    <a class="water-body-list-link" th:href="@{'/island-chains/'+ ${islandChain.id}}"
                        th:text="${islandChain.islandName}">List Coming Soon!</a>
                 </li>
             </ul>

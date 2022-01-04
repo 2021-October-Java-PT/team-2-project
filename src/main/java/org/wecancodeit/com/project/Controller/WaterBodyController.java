@@ -17,14 +17,14 @@ public class WaterBodyController {
     @Resource
     private WaterBodyRepo waterBodyRepo;
 
-    @RequestMapping("/waterBodies")
+    @RequestMapping("/water-body")
     public String displayAllBodiesOfWater(Model model) {
         model.addAttribute("waterBodies", waterBodyRepo.findAll());
         return "allWaterBodiesTemplate";
     }
 
-    @RequestMapping("/waterBody/{id}")
-    public String displaySingleWaterBody(@PathVariable long id, Model model){
+    @RequestMapping("/water-body/{id}")
+    public String displaySingleWaterBody(@PathVariable long id, Model model) {
         Optional<WaterBodyModel> retrievedWaterBody = waterBodyRepo.findById(id);
         WaterBodyModel foundWaterBody = retrievedWaterBody.get();
         model.addAttribute("waterBody", foundWaterBody);
