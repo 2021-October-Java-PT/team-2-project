@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/main/resources/stylesheets/generalTemplateStylesheet.css">
+    <link rel="stylesheet" href="/stylesheets/generalTemplateStylesheet.css">
     <title>Continent Template</title>
 </head>
 
@@ -15,8 +15,17 @@
         <div id="contactBar">Call toll-free <a href="">1-888-555-5555</a> or <a href="">CONTACT US</a></div>
     </div>
     <nav>
-        <div id="nav"><a href="">Home</a> | <a href="">About Us</a> | <a href="">Adventures</a> | <a
-                href="">Contact</a></div>
+        <div id="nav"><a href="">Home</a> | <a href="">About Us</a> |
+            <div class="dropWrapper">
+                <button class="dropButton"><a href="">Adventures</a></button>
+                <div class="dropContent">
+                    <a href="#">Search by Continent</a>
+                    <a href="/country/">Search by Country</a>
+                    <a href="/water-body/">Search by Body of Water</a>
+                    <a href="#">Search by Island Chain</a>
+                </div>
+            </div>
+            | <a href="#spotlightTrip">Spotlight Trip</a> | <a href="#contactUsForm">Contact</a></div>
     </nav>
     <div id="bannerImage">
         <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br>North America
