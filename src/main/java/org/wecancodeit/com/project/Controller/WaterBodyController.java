@@ -30,12 +30,4 @@ public class WaterBodyController {
         model.addAttribute("waterBody", foundWaterBody);
         return "waterBodyTemplate";
     }
-
-//      Ask Alan about this. It's pulling the object and passing it as the name in the template, but won't pull from the constructor
-//    @GetMapping("/waterBodies/{waterBodyName}")
-//    public String displaySingleBodyOfWater(@PathVariable String waterBodyName, Model model) {
-//        WaterBodyModel retrievedWaterBody = waterBodyRepository.findWaterBodyModelByWaterBodyName(waterBodyName);
-//        model.addAttribute("waterBody", retrievedWaterBody);
-//        return "waterBodyTemplate";
-//    }
 }

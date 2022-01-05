@@ -8,8 +8,6 @@ import org.wecancodeit.com.project.Model.ContinentModel;
 import org.wecancodeit.com.project.Repo.ContinentRepo;
 
 import javax.annotation.Resource;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import java.util.Optional;
 
 @Controller

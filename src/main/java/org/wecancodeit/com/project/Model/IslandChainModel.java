@@ -37,11 +37,11 @@ public class IslandChainModel {
         return waterBody;
     }
 
-    public PackListModel getPackList(){
+    public PackListModel getPackList() {
         return packList;
     }
 
-    public ItineraryModel getItinerary(){
+    public ItineraryModel getItinerary() {
         return itinerary;
     }
 
