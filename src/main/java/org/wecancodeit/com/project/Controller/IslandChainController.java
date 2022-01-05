@@ -22,7 +22,7 @@ public class IslandChainController {
     @RequestMapping("/island-chains")
     public String displayIslandChains(Model model) {
         model.addAttribute("island-chains", islandChainRepo.findAll());
-        return "islandChainTemplate";
+        return "allIslandChainsTemplate";
     }
 
     @RequestMapping("/island-chains/{id}")
@@ -32,13 +32,4 @@ public class IslandChainController {
         model.addAttribute("islandChain", foundIslandChain);
         return "islandChainTemplate";
     }
-
-//      Ask Alan about this. It's pulling the object and passing it as the name in the template, but won't pull from the constructor
-//    @GetMapping("/island-chains/{islandName}")
-//    public String displaySingleCampus(@PathVariable String islandName, Model model){
-//        IslandChainModel retrievedIslandChain = islandChainRepo.findIslandChainModelByIslandName(islandName);
-//        model.addAttribute("island-chain",retrievedIslandChain);
-//        return "islandChainTemplate";
-//    }
-
 }
