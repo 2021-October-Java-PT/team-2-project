@@ -49,8 +49,9 @@ public class CountryModel {
     public CountryModel() {
     }
 
-    public CountryModel(String countryName, String countryDescription, String countryMapUrl) {
+    public CountryModel(String countryName, ContinentModel continent, String countryDescription, String countryMapUrl) {
         this.countryName = countryName;
+        this.continent = continent;
         this.countryDescription = countryDescription;
         this.countryMapUrl = countryMapUrl;
     }

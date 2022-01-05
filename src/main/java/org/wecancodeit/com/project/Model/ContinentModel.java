@@ -13,6 +13,7 @@ public class ContinentModel {
     @GeneratedValue
     private Long id;
     private String continentName;
+    private String continentMapUrl;
 
     @OneToMany(mappedBy = "continent")
     private Collection<CountryModel> country;
@@ -29,10 +30,15 @@ public class ContinentModel {
         return country;
     }
 
+    public String getContinentMapUrl() {
+        return continentMapUrl;
+    }
+
     public ContinentModel() {
     }
 
-    public ContinentModel(String continentName) {
+    public ContinentModel(String continentName, String continentMapUrl) {
         this.continentName = continentName;
+        this.continentMapUrl = continentMapUrl;
     }
 }
