@@ -22,6 +22,7 @@
                     <a href="/continent/">Search by Continent</a>
                     <a href="/country/">Search by Country</a>
                     <a href="/water-body/">Search by Body of Water</a>
+                    <a href="/island-chain/">Search by Island Chain</a>
                     <a href="/island-chains/">Search by Island Chain</a>
                 </div>
             </div>
@@ -39,25 +40,19 @@
                     title="Monochrome">
             </iframe>
         </div>
-        <div id="allContinentsSummary">
-            <p>Lorem ipsum dolor sit amet. Est quasi praesentium aut galisum quibusdam 33 iure quasi ab tenetur
-                veniam et ited officiis quaerat eos tempore distinctio.</p>
+        <div id="allIslandChainsSummary">
+            <p>Wanting to find your next adventure in one of our beautiful featured island chains?</p>
 
-            <p>Est quis nobis At quidem natus est iste magni? Id debitis cumque sit praesentium reprehenderit sed
-                maxime voluptatem eum quia eveniet est dolorem consequatur hic autem sint.</p>
 
-            <p>Hic consequatur ducimus ut temporibus nemo ab atque neque. Ab sunt repellendus et blanditiis
-                voluptatem a veniam sunt ut consequatur quos. Ea ipsum iusto qui totam quia eos ipsam distinctio id
-                voluptatum cumque dolorem animi et voluptate assumenda aut iste repudiandae. Eum nesciunt quasi ut
-                nihil fugit ad ipsa optio aut amet explicabo est quisquam minus ut galisum mollitia id accusamus
-                fugit.</p>
+            <p>Check out our list below to the island adventure of your dreams</p>
         </div>
     </div>
     <div id="allIslandChainsOnTerraFirma">
         <div id="listAllIslandChainsOnTerraFirma">
+            <h1>Island Chains</h1>
             <ul>
-                <li>Bass Islands</li>
-                <li>Falken</li>
+                <li th:each="islandChains:${islandChains}"><a class="island-chains-list-link" th:href="@{'/island-chains/'+ ${islandChains.id}}"
+                                                                th:text="${islandChains.islandName}">List Coming Soon!</a></li>
             </ul>
         </div>
     </div>
