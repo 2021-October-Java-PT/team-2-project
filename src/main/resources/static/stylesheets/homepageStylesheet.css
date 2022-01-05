@@ -112,16 +112,61 @@ nav {
     padding: 0px 10px 0px 10px;
 }
 
-#clientReviews {
-    margin: 0px 0px 0px 0px;
+#islandHoppingBkgdClr{
     background-color: #7c862b;
-    height: 500px;
 }
 
+#islandHoppingMargin {
+    margin: 10px 20% 10px 20%;
+}
 
-#contactUsForm {
+#islandHopping {
+    display: grid;
+    grid-template-columns: 1fr 35%;
+    grid-template-areas: 
+    "islandHoppingImage whatIsIslandHoppingText";
+    column-gap: 20px;
+    height: 250px;
+    padding: 10px 0px 10px 0px;
+}
+
+#islandHoppingImage {
+    grid-area: "islandHoppingImage";
+    background-image: url(/images/farris-wheel-image.JPG);
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#whatIsIslandHoppingText {
+    grid-area: "whatIsIslandHoppingText";
+    padding: 0px 10px 0px 10px;
+}
+
+#contactUsWrapper {
     margin: 10px 20% 10px 20%;
     height: 400px;
+}
+
+#contactUsForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "contactUsFormClm1 contactUsFormClm2";
+    column-gap: 20px;
+}
+
+#contactUsFormClm1 {
+    grid-area: "contactUsFormClm1";
+}
+
+#contactUsFormClm2 {
+    grid-area: "contactUsFormClm2";
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
 }
 
 footer {
@@ -148,6 +193,14 @@ a {
 
 a:hover {
     color: #FFF;
+}
+
+p {
+    text-align: justify;
+}
+
+input {
+    width: 100%;
 }
 
 @media only screen and (max-width: 800px) {
