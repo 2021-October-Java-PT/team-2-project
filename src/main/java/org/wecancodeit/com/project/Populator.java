@@ -2,14 +2,8 @@ package org.wecancodeit.com.project;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import org.wecancodeit.com.project.Model.ContinentModel;
-import org.wecancodeit.com.project.Model.CountryModel;
-import org.wecancodeit.com.project.Model.IslandChainModel;
-import org.wecancodeit.com.project.Model.WaterBodyModel;
-import org.wecancodeit.com.project.Repo.ContinentRepo;
-import org.wecancodeit.com.project.Repo.CountryRepo;
-import org.wecancodeit.com.project.Repo.IslandChainRepo;
-import org.wecancodeit.com.project.Repo.WaterBodyRepo;
+import org.wecancodeit.com.project.Model.*;
+import org.wecancodeit.com.project.Repo.*;
 
 import javax.annotation.Resource;
 
@@ -28,8 +22,21 @@ public class Populator implements CommandLineRunner {
     @Resource
     private IslandChainRepo islandChainRepo;
 
+    @Resource
+    private ItineraryRepo itineraryRepo;
+
+    @Resource
+    private PackListRepo packListRepo;
+
     @Override
     public void run(String... args) throws Exception {
+
+        PackListModel bassIslandsPackList = new PackListModel("item1", "item2", "item3", "item4", "item5");
+        packListRepo.save(bassIslandsPackList);
+
+//        Itinerary
+        ItineraryModel bassIslandsItinerary = new ItineraryModel("day1", "day1Activities", "day2", "day2Activities", "day3", "day3Activities");
+        itineraryRepo.save(bassIslandsItinerary);
 
         //Continents
         ContinentModel asia = new ContinentModel("Asia");
@@ -67,9 +74,9 @@ public class Populator implements CommandLineRunner {
         waterBodyRepo.save(southChinaSea);
 
         //Island Chains
-        IslandChainModel bermuda = new IslandChainModel("Bermuda", unitedKingdom, caribbean);
-        IslandChainModel bassIsland = new IslandChainModel("Bass Island", canada, lakeErie);
-        IslandChainModel philippines = new IslandChainModel("Philippines", countryPhilippines, southChinaSea);
+        IslandChainModel bermuda = new IslandChainModel("Bermuda", unitedKingdom, caribbean, bassIslandsItinerary, bassIslandsPackList);
+        IslandChainModel bassIsland = new IslandChainModel("Bass Island", canada, lakeErie, bassIslandsItinerary, bassIslandsPackList);
+        IslandChainModel philippines = new IslandChainModel("Philippines", countryPhilippines, southChinaSea, bassIslandsItinerary,bassIslandsPackList);
         islandChainRepo.save(bermuda);
         islandChainRepo.save(bassIsland);
         islandChainRepo.save(philippines);
