@@ -19,7 +19,7 @@
             <div class="dropWrapper">
                 <button class="dropButton"><a href="">Adventures</a></button>
                 <div class="dropContent">
-                    <a href="#">Search by Continent</a>
+                    <a href="/continent/">Search by Continent</a>
                     <a href="/country/">Search by Country</a>
                     <a href="/water-body/">Search by Body of Water</a>
                     <a href="#">Search by Island Chain</a>
@@ -28,7 +28,7 @@
             | <a href="#spotlightTrip">Spotlight Trip</a> | <a href="#contactUsForm">Contact</a></div>
     </nav>
     <div id="bannerImage">
-        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br>North America
+        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br><h1 th:text="${continent.continentName}"></h1>
         </div>
     </div>
     <div id="continentInformation">
@@ -55,10 +55,10 @@
     <div id="countriesInContinent">
         <div id="listOfCountries">
             <ul>
-                <li>Puerto Rico</li>
-                <li>Jamaica</li>
-                <li>Bermuda</li>
-                <li>Cuba</li>
+                <li class="continent-list-links__continent" th:each="islandChain:${continent.country}">
+                    <a class="continent-list-link" th:href="@{'/country/'+ ${country.id}}"
+                       th:text="${country.countryName}">List Coming Soon!</a>
+                </li>
             </ul>
         </div>
     </div>
