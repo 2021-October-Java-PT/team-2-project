@@ -30,7 +30,6 @@ public class ContinentModel {
     }
 
     public ContinentModel() {
-
     }
 
     public ContinentModel(String continentName) {

@@ -9,6 +9,11 @@ public class WaterBodyModel {
     @GeneratedValue
     private Long id;
     private String waterBodyName;
+    @Lob
+    private String waterBodyDescription;
+    @Lob
+    private String waterBodyMapUrl;
+
 
     @OneToMany(mappedBy = "waterBody")
     private Collection<IslandChainModel> islandChains;
@@ -21,12 +26,22 @@ public class WaterBodyModel {
         return waterBodyName;
     }
 
-    public Collection<IslandChainModel> getIslandChains(){
+    public String getWaterBodyDescription() {
+        return waterBodyDescription;
+    }
+
+    public String getWaterBodyMapUrl() {
+        return waterBodyMapUrl;
+    }
+
+    public Collection<IslandChainModel> getIslandChains() {
         return islandChains;
     }
 
-    public WaterBodyModel(String waterBodyName) {
+    public WaterBodyModel(String waterBodyName, String waterBodyDescription, String waterBodyMapUrl) {
         this.waterBodyName = waterBodyName;
+        this.waterBodyDescription = waterBodyDescription;
+        this.waterBodyMapUrl = waterBodyMapUrl;
     }
 
     public WaterBodyModel() {

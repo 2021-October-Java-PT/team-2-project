@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.wecancodeit.com.project.Model.ContinentModel;
 import org.wecancodeit.com.project.Model.CountryModel;
 import org.wecancodeit.com.project.Repo.CountryRepo;
 
@@ -18,17 +17,17 @@ public class CountryController {
     private CountryRepo countryRepo;
 
     // update spelling issues
-    @RequestMapping("countrys")
-    public String displayCountrys(Model model){
-        model.addAttribute("countrys", countryRepo.findAll());
-        return "countrysTemplate";
+    @RequestMapping("/country")
+    public String displayCountries(Model model) {
+        model.addAttribute("countries", countryRepo.findAll());
+        return "allCountriesTemplate";
     }
 
-    @RequestMapping("/countrys/{id}")
-    public String displaySingleCountry(@PathVariable Long id, Model model) {
+    @RequestMapping("/country/{id}")
+    public String displaySingleCountry(@PathVariable long id, Model model) {
         Optional<CountryModel> retrievedCountry = countryRepo.findById(id);
         CountryModel foundCountry = retrievedCountry.get();
-        model.addAttribute("continent", foundCountry);
+        model.addAttribute("country", foundCountry);
         return "countryTemplate";
     }
 }

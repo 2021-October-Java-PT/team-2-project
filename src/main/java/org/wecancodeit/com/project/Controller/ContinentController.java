@@ -8,8 +8,6 @@ import org.wecancodeit.com.project.Model.ContinentModel;
 import org.wecancodeit.com.project.Repo.ContinentRepo;
 
 import javax.annotation.Resource;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import java.util.Optional;
 
 @Controller
@@ -18,14 +16,14 @@ public class ContinentController {
     @Resource
     private ContinentRepo continentRepo;
 
-    @RequestMapping("/continents")
+    @RequestMapping("/continent")
     public String displayContinents(Model model) {
         model.addAttribute("continents", continentRepo.findAll());
-        return "continentsTemplate";
+        return "allContinentsTemplate";
     }
 
-    @RequestMapping("/continents/{id}")
-    public String displaySingleContinent(@PathVariable Long id, Model model) {
+    @RequestMapping("/continent/{id}")
+    public String displaySingleContinent(@PathVariable long id, Model model) {
         Optional<ContinentModel> retrievedContinent = continentRepo.findById(id);
         ContinentModel foundContinent = retrievedContinent.get();
         model.addAttribute("continent", foundContinent);

@@ -1,45 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/main/resources/stylesheets/homepageStylesheet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/homepageStylesheet.css" />
     <title>JAC Enterprises Island Hopping Adventures</title>
-</head>
+  </head>
 
-<body>
-<div class="wrapper">
-    <div id="contactBarBackground">
-        <div id="contactBar">Call toll-free <a href="">1-888-555-5555</a> or <a href="">CONTACT US</a></div>
-    </div>
-    <nav>
-        <div id="nav"><a href="">Home</a> | <a href="">About Us</a> | <a href=" ">Adventures</a> | <a
-                href="#spotlightTrip">Spotlight Trip</a> | <a href="#contactUsForm">Contact</a></div>
-
-    </nav>
-    <div id="bannerImage">
-        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br>Island Hopping Adventures
+  <body>
+    <div class="wrapper">
+      <div id="contactBarBackground">
+        <div id="contactBar">
+          Call toll-free <a href="">1-888-555-5555</a> or
+          <a href="">CONTACT US</a>
         </div>
-    </div>
-    <div id="spotlightTrip">
+      </div>
+      <nav>
+        <div id="nav">
+          <a href="/">Home</a> | <a href="/about-us">About Us</a> |
+          <div class="dropWrapper">
+            <button class="dropButton">Adventures</button>
+            <div class="dropContent">
+              <a href="/continent/">Search by Continent</a>
+              <a href="/country/">Search by Country</a>
+              <a href="/water-body/">Search by Body of Water</a>
+              <a href="/island-chains/">Search by Island Chain</a>
+            </div>
+          </div>
+          | <a href="/#spotlightTrip">Spotlight Trip</a> |
+          <a href="/#contactUsForm">Contact</a>
+        </div>
+      </nav>
+      <div id="bannerImage">
+        <div id="bannerText">
+          <span id="jacEntFontLightSmall">JAC Enterprises</span><br />Island
+          Hopping Adventures
+        </div>
+      </div>
+      <div id="spotlightTrip">
         <div id="spotlightTripImage"></div>
         <div id="spotlightTripText">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
         </div>
-    </div>
-    <div id="clientReviews">Client Reviews</div>
-    <div id="contactUsForm">Contact Us Form</div>
-    <footer>
+      </div>
+      <div id="islandHoppingBkgdClr">
+        <div id="islandHoppingMargin">
+          <div id="islandHopping">
+            <div id="whatIsIslandHoppingText">
+              <h2>What is Island Hopping?</h2>
+              <p>
+                Island hopping, also known as leapfrogging, originalally was a
+                military strategy employed by the Allies in the Pacific War
+                against the Empire of Japan during World War II. In terms of
+                travel today, it means to travel from one island to another,
+                especially as a tourist in an area of small islands.
+              </p>
+            </div>
+            <div id="islandHoppingImage"></div>
+          </div>
+        </div>
+      </div>
+      <div id="contactUsWrapper">
+        <h2>Contact Us Form</h2>
+        <h3>A representative will be in touch after submission.</h3>
+        <div id="contactUsForm">
+          <div id="contactUsFormClm1">
+            <form>
+              <label for="fName">First Name: </label
+              ><input type="text" id="fName" name="fName" /><br />
+              <label for="email">Email Address: </label
+              ><input type="text" id="email" name="email" /><br />
+            </form>
+          </div>
+          <div id="contactUsFormClm2">
+            <form>
+              <label for="lName">Last Name: </label
+              ><input type="text" id="lName" name="lName" /><br />
+              <label for="phone">Phone Number: </label
+              ><input type="text" id="phone" name="phone" /><br />
+            </form>
+          </div>
+          <form>
+            <label for="help">How can we help you?</label><br />
+            <textarea></textarea><br />
+            <button type="submit" value="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <footer>
         <div id="footer">JAC Enterprises &copy; 2021</div>
-    </footer>
-</div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
