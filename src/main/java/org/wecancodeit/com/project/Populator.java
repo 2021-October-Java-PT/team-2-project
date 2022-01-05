@@ -76,7 +76,7 @@ public class Populator implements CommandLineRunner {
         //Island Chains
         IslandChainModel bermuda = new IslandChainModel("Bermuda", unitedKingdom, caribbean, bassIslandsItinerary, bassIslandsPackList);
         IslandChainModel bassIsland = new IslandChainModel("Bass Island", canada, lakeErie, bassIslandsItinerary, bassIslandsPackList);
-        IslandChainModel philippines = new IslandChainModel("Philippines", countryPhilippines, southChinaSea, bassIslandsItinerary,bassIslandsPackList);
+        IslandChainModel philippines = new IslandChainModel("Philippines", countryPhilippines, southChinaSea, bassIslandsItinerary, bassIslandsPackList);
         islandChainRepo.save(bermuda);
         islandChainRepo.save(bassIsland);
         islandChainRepo.save(philippines);
