@@ -21,8 +21,8 @@ public class IslandChainController {
 
     @RequestMapping("/island-chains")
     public String displayIslandChains(Model model) {
-        model.addAttribute("island-chains", islandChainRepo.findAll());
-        return "islandChainTemplate";
+        model.addAttribute("islandChains", islandChainRepo.findAll());
+        return "allIslandChainsTemplate";
     }
 
     @RequestMapping("/island-chains/{id}")
