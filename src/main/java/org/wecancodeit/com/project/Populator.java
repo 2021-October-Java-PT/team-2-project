@@ -110,26 +110,17 @@ public class Populator implements CommandLineRunner {
         CountryModel madagascarCountry = new CountryModel("Madagascar", africa, "Madagascar, officially the Republic of Madagascar, and previously known as the Malagasy Republic, is an island country in the Indian Ocean, approximately 400 kilometres off the coast of East Africa across the Mozambique Channel.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#4.61/-19.14/46.74");
         countryRepo.save(madagascarCountry);
 
-        CountryModel countryPhilippines = new CountryModel("Philippines", asia, "For God, People, Nature, and Country", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#4.26/12.04/123.51");
-        countryRepo.save(countryPhilippines);
-
         CountryModel republicOfCaboVerde = new CountryModel("Republic of Cabo Verde",africa,"Cape Verde or Cabo Verde, officially the Republic of Cabo Verde, is an archipelago and island country in the central Atlantic Ocean, consisting of ten volcanic islands with a combined land area of about 4,033 square kilometres.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#3.65/16.94/-25.01");
         countryRepo.save(republicOfCaboVerde);
 
         CountryModel republicOfSeychelles = new CountryModel("Republic Of Seychelles",africa,"The Seychelles is an archipelago of 115 islands in the Indian Ocean, off East Africa. It's home to numerous beaches, coral reefs and nature reserves, as well as rare animals such as giant Aldabra tortoises. Mahé, a hub for visiting the other islands, is home to capital Victoria. It also has the mountain rainforests of Morne Seychellois National Park and beaches, including Beau Vallon and Anse Takamaka. ","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#4.92/-6.91/52.37");
         countryRepo.save(republicOfSeychelles);
 
-        CountryModel spain = new CountryModel("Spain",europe,"Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct. Catalonia’s capital, Barcelona, is defined by Antoni Gaudí’s whimsical modernist landmarks like the Sagrada Família church.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#3.5/40.47/-3.49");
-        countryRepo.save(spain);
-
         CountryModel tanzania = new CountryModel("Tanzanian",africa,"Tanzania is an East African country known for its vast wilderness areas. They include the plains of Serengeti National Park, a safari mecca populated by the “big five” game (elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s highest mountain. Offshore lie the tropical islands of Zanzibar, with Arabic influences, and Mafia, with a marine park home to whale sharks and coral reefs.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#3.43/-5.92/33.81");
         countryRepo.save(tanzania);
 
         CountryModel thailand = new CountryModel("Thailand",asia,"Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). Nearby beach resorts include bustling Pattaya and fashionable Hua Hin.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#3.66/14.61/102.17");
         countryRepo.save(thailand);
-
-        CountryModel uk = new CountryModel("United Kingdom", europe, "The Queen lives here.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#3.7/55.08/-4.72");
-        countryRepo.save(uk);
 
         CountryModel usa = new CountryModel("United States of America",northAmerica,"The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance and culture center, and capital Washington, DC. Midwestern metropolis Chicago is known for influential architecture and on the west coast, Los Angeles' Hollywood is famed for filmmaking.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#1.83/39.41/-97.13");
         countryRepo.save(usa);
@@ -138,7 +129,6 @@ public class Populator implements CommandLineRunner {
 
 
         //Water Bodies
-        Island-chain-mission
         WaterBodyModel southAtlanticOcean = new WaterBodyModel("South Atlantic", "The Atlantic Ocean is the second-largest of the world's five oceans, with an area of about 106,460,000 km². It covers approximately 20% of Earth's surface and about 29% of its water surface area.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#1.42/-27.7/-15.6");
         waterBodyRepo.save(southAtlanticOcean);
 
@@ -175,26 +165,11 @@ public class Populator implements CommandLineRunner {
         WaterBodyModel gulfOfThailand = new WaterBodyModel("Gulf of Thailand","The Gulf of Thailand, also known as the Gulf of Siam, is a shallow inlet in the southwestern South China Sea, bounded between the southwestern shores of the Indochinese Peninsula and the northern half of the Malay Peninsula.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#5.42/9.591/101.992");
         waterBodyRepo.save(gulfOfThailand);
 
-        WaterBodyModel indianOcean = new WaterBodyModel("Indian Ocean", "The Indian Ocean has been known by its present name since at least 1515 when the Latin form Oceanus Orientalis Indicus (\"Indian Eastern Ocean\") is attested, named for India, which projects into it. It was earlier known as the Eastern Ocean, a term that was still in use during the mid-18th century (see map), as opposed to the Western Ocean (Atlantic) before the Pacific was surmised.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#1.66/-3.7/74.7");
-        waterBodyRepo.save(indianOcean);
-
-        WaterBodyModel ionianSea = new WaterBodyModel("Ionian Sea", "The Ionian Sea is an elongated bay of the Mediterranean Sea. It is connected to the Adriatic Sea to the north, and is bounded by Southern Italy, including Calabria, Sicily, and the Salento peninsula to the west, southern Albania to the north, and the west coast of Greece, including the Peloponnese.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#5.43/38.797/19.173");
-        waterBodyRepo.save(ionianSea);
-
         WaterBodyModel jintotoloChannel = new WaterBodyModel("Jintotolo Channel","The Jintotolo Channel is the body of water that connects the Sibuyan Sea with the Visayan Sea. It is located between the Philippine islands of Panay and Masbate, and is an important shipping route to and from the Central Visayas.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#10.98/11.5697/123.2154");
         waterBodyRepo.save(jintotoloChannel);
 
-        WaterBodyModel lakeErie = new WaterBodyModel("Lake Erie", "A place where time moves a little slower, loved ones feel a little closer and there's a Great Lake between you and your worries. From island hopping to birdwatching, record-breaking roller coasters to water parks, wineries to dockside dining, plus hidden gems that keep the fun going all year long. However you like to coast – you'll find it here.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#5.49/42.268/-80.862\n");
-        waterBodyRepo.save(lakeErie);
-
         WaterBodyModel mediterraneanSea = new WaterBodyModel("Mediterranean Sea","The Mediterranean Sea is a sea connected to the Atlantic Ocean, surrounded by the Mediterranean Basin and almost completely enclosed by land: on the north by Western and Southern Europe and Anatolia, on the south by North Africa, and on the east by the Levant.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#4.67/34.29/23.75");
         waterBodyRepo.save(mediterraneanSea);
-
-        WaterBodyModel pacificOcean = new WaterBodyModel("Pacific Ocean", "The Pacific Ocean is the largest and deepest of Earth's five oceanic divisions. It extends from the Arctic Ocean in the north to the Southern Ocean in the south and is bounded by the continents of Asia and Australia in the west and the Americas in the east.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#1.12/3.1/-155.5");
-        waterBodyRepo.save(pacificOcean);
-
-        WaterBodyModel southAtlanticOcean = new WaterBodyModel("South Atlantic", "The Atlantic Ocean is the second-largest of the world's five oceans, with an area of about 106,460,000 km². It covers approximately 20% of Earth's surface and about 29% of its water surface area.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#1.42/-27.7/-15.6");
-        waterBodyRepo.save(southAtlanticOcean);
 
         WaterBodyModel southChinaSea = new WaterBodyModel("South China Sea", "The South China Sea Islands consist of over 250 islands, atolls, cays, shoals, reefs and seamounts in the South China Sea. The islands are mostly low and small, and have few inhabitants. The islands and surrounding seas are subject to overlapping territorial claims by the countries bordering the South China Sea. The South China Sea Islands constitute a distinct tropical moist broadleaf forest terrestrial ecoregion, and the South China Sea Oceanic Islands marine ecoregion.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#3.01/5.82/113.71");
         waterBodyRepo.save(southChinaSea);
@@ -204,7 +179,7 @@ public class Populator implements CommandLineRunner {
 
 
         //Island Chains
-        Island-chain-mission
+
         IslandChainModel bassIsland = new IslandChainModel("Bass Islands", canada, lakeErie, bassIslandsItinerary, bassIslandsPackList, "https://api.mapbox.com/styles/v1/cstephens/cky2cwav41al814o5n98c52su.html?title=false&access_token=pk.eyJ1IjoiY3N0ZXBoZW5zIiwiYSI6ImNreTJjc2tzYjBqbXQydW1wZ2N0a20zeDYifQ.SkbSfO39uFF6KHu0Jm7ISA&zoomwheel=false#11.38/41.6727/-82.8273");
         islandChainRepo.save(bassIsland);
 
@@ -300,51 +275,6 @@ public class Populator implements CommandLineRunner {
 
         IslandChainModel sanAndresIsland = new IslandChainModel("San Andres",colombia,caribbeanSea,bassIslandsItinerary,bassIslandsPackList,"https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#7.19/12.705/-81.587");
         islandChainRepo.save(sanAndresIsland);
-
-        IslandChainModel andamanIslands = new IslandChainModel("Andaman Islands", india, indianOcean, bassIslandsItinerary, bassIslandsPackList);
-        islandChainRepo.save(andamanIslands);
-
-        IslandChainModel bassIslands = new IslandChainModel("Bass Islands", canada, lakeErie, bassIslandsItinerary, bassIslandsPackList);
-        islandChainRepo.save(bassIslands);
-
-        IslandChainModel galapagosIslands = new IslandChainModel("Galápagos Islands", ecuador, pacificOcean, bassIslandsItinerary, bassIslandsPackList);
-        islandChainRepo.save(galapagosIslands);
-
-        IslandChainModel heardMcDonaldIslands = new IslandChainModel("Heard Island and the McDonald Islands", australiaCountry, indianOcean, bassIslandsItinerary, bassIslandsPackList);
-        islandChainRepo.save(heardMcDonaldIslands);
-
-        IslandChainModel ionianIslands = new IslandChainModel("The Ionian Islands", greece, ionianSea, bassIslandsItinerary, bassIslandsPackList);
-        islandChainRepo.save(ionianIslands);
-
-        IslandChainModel madagascar = new IslandChainModel("Madagascar", madagascarCountry, indianOcean, bassIslandsItinerary, bassIslandsPackList);
-        islandChainRepo.save(madagascar);
-
-
-//        IslandChainModel bermuda = new IslandChainModel("Bermuda Islands", uk, aegeanSea, bassIslandsItinerary, bassIslandsPackList);
-//        islandChainRepo.save(bermuda);
-//
-//        IslandChainModel santorini = new IslandChainModel("Santorini Island", greece, aegeanSea);
-//        islandChainRepo.save(santorini);
-//
-//        IslandChainModel balearicIslands = new IslandChainModel("Balearic Islands", spain, ionianSea);
-//        islandChainRepo.save(balearicIslands);
-//
-//        IslandChainModel campanianIslands = new IslandChainModel("Campanian Archipelago", italy, tyrrhenianSea);
-//        islandChainRepo.save(campanianIslands);
-//
-//        IslandChainModel hawaiianIslands = new IslandChainModel("Hawaiian Islands", usa, pacificOcean);
-//        islandChainRepo.save(hawaiianIslands);
-//
-//        IslandChainModel koSamui = new IslandChainModel("Koh Samui", thailand, gulfOfThailand);
-//        islandChainRepo.save(koSamui);
-//
-//        IslandChainModel caboVerde = new IslandChainModel("Cabo Verde", republicOfCaboVerde, atlanticOcean);
-//        islandChainRepo.save(caboVerde);
-//
-//        IslandChainModel seychelles = new IslandChainModel("Seychelles Islands", seychellesRepublic, indianOcean);
-//        islandChainRepo.save(seychelles);
-//
-//        IslandChainModel philippines = new IslandChainModel("Philippines", countryPhilippines, southChinaSea, bassIslandsItinerary, bassIslandsPackList);
-//        islandChainRepo.save(philippines);
+        
     }
 }
