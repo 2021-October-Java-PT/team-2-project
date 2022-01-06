@@ -6,16 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/islandChainStylesheet.css">
-    <title>Welcome to the Islands</title>
+    <title>JAC Enterprises Island Hopping Adventures</title>
 </head>
 
 <body>
 <div class="wrapper">
     <div id="contactBarBackground">
-        <div id="contactBar">Call toll-free <a href="">1-888-555-5555</a> or <a href="">CONTACT US</a></div>
+        <div id="contactBar">
+            Call toll-free <a href="tel:18885555555">1-888-555-5555</a> or
+            <a href="/#contactUsForm">CONTACT US</a>
+        </div>
     </div>
     <nav>
-        <div id="nav"><a href="/">Home</a> | <a href="/about-us">About Us</a> |
+        <div id="nav">
+            <a href="/">Home</a> | <a href="/about-us">About Us</a> |
             <div class="dropWrapper">
                 <button class="dropButton">Adventures</button>
                 <div class="dropContent">
@@ -25,8 +29,13 @@
                     <a href="/island-chains/">Search by Island Chain</a>
                 </div>
             </div>
-            | <a href="/#spotlightTrip">Spotlight Trip</a> | <a href="/#contactUsForm">Contact</a></div>
+            | <a href="/#spotlightTrip">Spotlight Trip</a> |
+            <a href="/#contactUsForm">Contact</a>
+        </div>
     </nav>
+    <div id="bannerImage">
+        <div id="bannerText"><span id="jacEntFontBoldSmall">JAC Enterprises</span>
+            <br>IslandChainThymeLeafHere
     <div id="bannerImage" >
         <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br th:each="islandChain:${islandChain}" th:text="${islandChain.islandName}">
         </div>
@@ -34,6 +43,7 @@
     <div id="highlightedAdventure">
         <div id="adventureImage"></div>
         <div id="adventureDescription">
+            <p>IslandChainSummaryThymeLeafHere</p>
             <p>Lorem ipsum dolor sit amet. Est quasi praesentium aut galisum quibusdam 33 iure quasi ab tenetur
                 veniam et ited officiis quaerat eos tempore distinctio.</p>
 
@@ -50,6 +60,10 @@
         <div id="itinerary">
             <h3>Itinerary</h3>
             <ol>
+                <li>Day 1: ThymeleafHere</li>
+                <li>Day 2: ThymeleafHere</li>
+                <li>Day 3: ThymeleafHere</li>
+                <li>Day 4: ThymeleafHere</li>
                 <li th:each="islandChain:${islandChain}" th:text="${islandChain.itinerary.day1}" ></li>
                 <li th:each="islandChain:${islandChain}" th:text="${islandChain.itinerary.day2}">Day 2:</li>
                 <li th:each="islandChain:${islandChain}" th:text="${islandChain.itinerary.day3}">Day 3: Kauai</li>
@@ -65,6 +79,15 @@
         <div id="packingList">
             <h3>What to Pack</h3>
             <ul>
+                <li>ThymeleafHere</li>
+                <li>ThymeleafHere</li>
+                <li>ThymeleafHere</li>
+                <li>ThymeleafHere</li>
+                <li>ThymeleafHere</li>
+                <li>ThymeleafHere</li>
+                <li>ThymeleafHere</li>
+                <li>ThymeleafHere</li>
+                <li>ThymeleafHere</li>
                 <li th:each="islandChain:${islandChain}" th:text="${islandChain.packList.item1}">Sunscreen</li>
                 <li th:each="islandChain:${islandChain}" th:text="${islandChain.packList.item2}">Waterproof Phone Case</li>
                 <li th:each="islandChain:${islandChain}" th:text="${islandChain.packList.item3}">Cooling Towel</li>
