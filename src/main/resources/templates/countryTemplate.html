@@ -47,16 +47,12 @@
         </div>
         <div id="countrySummary">
             <p th:text="${country.countryDescription}">Country description coming soon!</p>
-
         </div>
     </div>
     <div id="islandsInCountry">
         <div id="listOfIslandChains">
+            <h1>Island Chains</h1>
             <ol>
-<!--                <li class="country-list-links__country" th:each="islandChain:${country.islandChains}">-->
-<!--                    <a class="country-list-link" th:href="@{'/island-chains/'+ ${islandChain.id}}"-->
-<!--                       th:text="${islandChain.islandName}">List Coming Soon!</a>-->
-<!--                </li>-->
                 <li class="country-list-links__country" th:each="islandChain:${country.islandChains}">
                     <a class="country-list-link" th:href="@{'/island-chains/'+ ${islandChain.id}}"
                        th:text="${islandChain.islandName}">List Coming Soon!</a>
@@ -64,7 +60,6 @@
             </ol>
         </div>
     </div>
-
     <footer>
         <div id="footer">JAC Enterprises &copy; 2021</div>
     </footer>
