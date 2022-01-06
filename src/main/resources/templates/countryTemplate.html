@@ -35,7 +35,7 @@
     </nav>
     <div id="bannerImage">
         <div id="bannerText"><span id="jacEntFontBoldSmall">JAC Enterprises</span>
-            <br><h1 th:text="${country.countryName}">Location</h1>
+            <br th:text="${country.countryName}">
         </div>
     </div>
     <div id="countryInformation">
@@ -52,12 +52,16 @@
     </div>
     <div id="islandsInCountry">
         <div id="listOfIslandChains">
-            <ul>
+            <ol>
+<!--                <li class="country-list-links__country" th:each="islandChain:${country.islandChains}">-->
+<!--                    <a class="country-list-link" th:href="@{'/island-chains/'+ ${islandChain.id}}"-->
+<!--                       th:text="${islandChain.islandName}">List Coming Soon!</a>-->
+<!--                </li>-->
                 <li class="country-list-links__country" th:each="islandChain:${country.islandChains}">
                     <a class="country-list-link" th:href="@{'/island-chains/'+ ${islandChain.id}}"
                        th:text="${islandChain.islandName}">List Coming Soon!</a>
                 </li>
-            </ul>
+            </ol>
         </div>
     </div>
 

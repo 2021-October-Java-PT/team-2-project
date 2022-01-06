@@ -49,23 +49,13 @@
         <div id="allIslandChainsOnTerraFirma">
             <div id="listAllIslandChainsOnTerraFirma">
                 <h1>Island Chains</h1>
-                <ul>
+                <ol>
                     <li th:each="islandChains:${islandChains}"><a class="island-chains-list-link" th:href="@{'/island-chains/'+ ${islandChains.id}}"
                                                                   th:text="${islandChains.islandName}">List Coming Soon!</a></li>
-                </ul>
+                </ol>
             </div>
         </div>
     </div>
-    <!--    <div id="allIslandChainsOnTerraFirma">-->
-    <!--        <div id="listAllIslandChainsOnTerraFirma">-->
-    <!--            <h1>Island Chains</h1>-->
-    <!--            <ul>-->
-    <!--                <li th:each="islandChains:${islandChains}"><a class="island-chains-list-link" th:href="@{'/island-chains/'+ ${islandChains.id}}"-->
-    <!--                                                                th:text="${islandChains.islandName}">List Coming Soon!</a></li>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
     <footer>
         <div id="footer">JAC Enterprises &copy; 2021</div>
     </footer>

@@ -49,27 +49,15 @@
         <div id="allBodiesOfWaterOnTerraFirma">
             <div id="listOfBodiesOfWaterOnTerraFirma">
                 <h1>Water Region</h1>
-                <ul>
+                <ol>
                     <li th:each="waterBodies:${waterBodies}">
                         <a class="water-body-list-link" th:href="@{'/water-body/'+ ${waterBodies.id}}"
                            th:text="${waterBodies.waterBodyName}">List Coming Soon!</a>
                     </li>
-                </ul>
+                </ol>
             </div>
         </div>
     </div>
-    <!--    <div id="allBodiesOfWaterOnTerraFirma">-->
-    <!--        <div id="listOfBodiesOfWaterOnTerraFirma">-->
-    <!--            <h1>Water Region</h1>-->
-    <!--            <ul>-->
-    <!--                <li th:each="waterBodies:${waterBodies}">-->
-    <!--                    <a class="water-body-list-link" th:href="@{'/water-body/'+ ${waterBodies.id}}"-->
-    <!--                       th:text="${waterBodies.waterBodyName}">List Coming Soon!</a>-->
-    <!--                </li>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
     <footer>
         <div id="footer">JAC Enterprises &copy; 2021</div>
     </footer>
