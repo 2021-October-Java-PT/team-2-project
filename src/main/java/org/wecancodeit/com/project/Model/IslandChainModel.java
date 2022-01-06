@@ -20,6 +20,8 @@ public class IslandChainModel {
     @ManyToOne
     private PackListModel packList;
 
+    private String islandMapUrL;
+
 
     public Long getId() {
         return id;
@@ -45,12 +47,13 @@ public class IslandChainModel {
         return itinerary;
     }
 
-    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel waterBody, ItineraryModel itinerary, PackListModel packList) {
+    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel waterBody, ItineraryModel itinerary, PackListModel packList, String islandMapUrL) {
         this.islandName = islandName;
         this.country = country;
         this.waterBody = waterBody;
         this.itinerary = itinerary;
         this.packList = packList;
+        this.islandMapUrL = islandMapUrL;
     }
 
     public IslandChainModel() {
