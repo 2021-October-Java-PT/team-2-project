@@ -9,17 +9,17 @@ public class IslandChainModel {
     @GeneratedValue
     private Long id;
     private String islandName;
-
     @ManyToOne
     private CountryModel country;
-
     @ManyToOne
     private WaterBodyModel waterBody;
     @OneToOne
     private ItineraryModel itinerary;
     @ManyToOne
     private PackListModel packList;
-
+    @Lob
+    private String adventureSummary;
+    @Lob
     private String islandMapUrL;
 
 
@@ -39,20 +39,29 @@ public class IslandChainModel {
         return waterBody;
     }
 
-    public PackListModel getPackList() {
-        return packList;
-    }
-
     public ItineraryModel getItinerary() {
         return itinerary;
     }
 
-    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel waterBody, ItineraryModel itinerary, PackListModel packList, String islandMapUrL) {
+    public PackListModel getPackList() {
+        return packList;
+    }
+
+    public String getAdventureSummary() {
+        return adventureSummary;
+    }
+
+    public String getIslandMapUrL() {
+        return islandMapUrL;
+    }
+
+    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel waterBody, ItineraryModel itinerary, PackListModel packList, String adventureSummary, String islandMapUrL) {
         this.islandName = islandName;
         this.country = country;
         this.waterBody = waterBody;
         this.itinerary = itinerary;
         this.packList = packList;
+        this.adventureSummary = adventureSummary;
         this.islandMapUrL = islandMapUrL;
     }
 

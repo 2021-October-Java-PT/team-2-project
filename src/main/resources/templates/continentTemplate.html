@@ -61,12 +61,12 @@
     </div>
     <div id="countriesInContinent">
         <div id="listOfCountries">
-            <ul>
+            <ol>
                 <li class="continent-list-links__continent" th:each="country:${continent.country}">
                     <a class="continent-list-link" th:href="@{'/country/'+ ${country.id}}"
                        th:text="${country.countryName}">List Coming Soon!</a>
                 </li>
-            </ul>
+            </ol>
         </div>
     </div>
 

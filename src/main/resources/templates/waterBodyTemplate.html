@@ -52,12 +52,12 @@
     </div>
     <div id="islandsInWaterBody">
         <div id="listOfIslandChains">
-            <ul>
+            <ol>
                 <li class="water-body-list-links__water-body" th:each="islandChain:${waterBody.islandChains}">
                     <a class="water-body-list-link" th:href="@{'/island-chains/'+ ${islandChain.id}}"
                        th:text="${islandChain.islandName}">List Coming Soon!</a>
                 </li>
-            </ul>
+            </ol>
         </div>
     </div>
 

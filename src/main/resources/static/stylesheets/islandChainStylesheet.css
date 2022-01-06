@@ -6,12 +6,12 @@ body {
 #contactBarBackground {
     background-color: #bfdff9;
     text-align: center;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0 5px 0;
 }
 
 #contactBar {
-    margin: 0px 20% 0px 20%;
-    padding: 5px 0px 5px 0px;
+    margin: 0 20% 0 20%;
+    padding: 5px 0 5px 0;
     text-align: center;
     font-size: large;
 }
@@ -19,11 +19,11 @@ body {
 nav {
     background-color: #7c862b;
     color: #000;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0 5px 0;
 }
 
 #nav {
-    margin: 0px 20% 0px 20%;
+    margin: 0 20% 0 20%;
     padding: 5px 5px;
     text-align: center;
     font-size: large;
@@ -47,7 +47,7 @@ nav {
     position: absolute;
     background-color: #7c862b;
     min-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -79,7 +79,6 @@ nav {
     background-repeat: no-repeat;
     background-size: auto;
     height: 400px;
-    border-radius: 8px;
 }
 
 #bannerText {
@@ -88,9 +87,9 @@ nav {
     font-weight: bolder;
     padding: 90px 0;
     color: white;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #7c862b;
 }
 
 #highlightedAdventure {
@@ -106,7 +105,7 @@ nav {
 
 #adventureImage {
     grid-area: "adventureImage";
-    background-image: url(/src/main/resources/images/farris-wheel-image.JPG);
+    background-image: url(/images/farris-wheel-image.JPG);
     background-position: center;
     background-size: cover;
     border-radius: 8px;
@@ -168,7 +167,7 @@ iframe {
 
 #packingImage {
     grid-area: "packingImage";
-    background-image: url(/src/main/resources/images/packing-image.jpg);
+    background-image: url(/images/packing-image.jpg);
     background-size: 100%;
     border-radius: 8px;
 }
@@ -188,9 +187,9 @@ footer {
     text-align: center;
 }
 
-#jacEntFontLightSmall {
+#jacEntFontBoldSmall {
     font-size: 20pt;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 a {
