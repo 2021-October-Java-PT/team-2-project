@@ -93,33 +93,49 @@ nav {
     -webkit-text-stroke-color: white;
 }
 
-#waterBodyInformation, #countryInformation, #continentInformation,
-#destinationsInformation, #allBodiesOfWaterInformation, #allContinentsInformation,
-#allCountriesInformation, #allIslandChainsInformation {
+#waterBodyInformation,
+#countryInformation,
+#continentInformation,
+#destinationsInformation,
+#allBodiesOfWaterInformation,
+#allContinentsInformation,
+#allCountriesInformation,
+#allIslandChainsInformation {
     margin: 0px 20% 0px 20%;
     height: 400px;
     display: grid;
     grid-template-columns: 35% 1fr;
     grid-template-areas:
-         "waterBodyMap waterBodySummary";
-"map summary";
+        "waterBodyMap waterBodySummary";
+    "map summary";
     column-gap: 10px;
     padding: 10px 0px 10px 0px;
 
 }
 
-#waterBodyMap, #countryMap, #continentMap,
-#destinationsMap, #allBodiesOfWaterMap, #allContinentsMap,
-#allCountriesMap, #allIslandChainsMap, #allIslandChainsMap {
+#waterBodyMap,
+#countryMap,
+#continentMap,
+#destinationsMap,
+#allBodiesOfWaterMap,
+#allContinentsMap,
+#allCountriesMap,
+#allIslandChainsMap,
+#allIslandChainsMap {
     grid-area: "map";
     background-position: center;
     background-size: cover;
     border-radius: 8px;
 }
 
-#waterBodySummary, #countrySummary, #continentSummary,
-#destinationsSummary, #allBodiesOfWaterSummary, #allContinentsSummary,
-#allCountriesSummary, #allContinentsSummary {
+#waterBodySummary,
+#countrySummary,
+#continentSummary,
+#destinationsSummary,
+#allBodiesOfWaterSummary,
+#allContinentsSummary,
+#allCountriesSummary,
+#allContinentsSummary {
     grid-area: "summary";
 }
 
@@ -129,18 +145,61 @@ iframe {
     border: 0px;
 }
 
-#islandsInWaterBody, #islandsInCountry, #countriesInContinent,
-#destinationsOnTerraFirma, #allBodiesOfWaterOnTerraFirma, #allContinentsOnTerraFirma,
-#allCountriesOnTerraFirma, #allIslandChainsOnTerraFirma {
+#islandsInWaterBody,
+#islandsInCountry,
+#countriesInContinent,
+#destinationsOnTerraFirma,
+#allBodiesOfWaterOnTerraFirma,
+#allContinentsOnTerraFirma,
+#allCountriesOnTerraFirma,
+#allIslandChainsOnTerraFirma {
     background-color: #bfdff9;
 }
 
-#listOfIslandChains, #listOfCountries,
-#listOfDestinations, #listOfBodiesOfWaterOnTerraFirma, #listAllContinentsOnTerraFirma,
-#listOfAllCountriesOnTerraFirma, #listAllIslandChainsOnTerraFirma {
+#listOfIslandChains,
+#listOfCountries,
+#listOfDestinations,
+#listOfBodiesOfWaterOnTerraFirma,
+#listAllContinentsOnTerraFirma,
+#listOfAllCountriesOnTerraFirma,
+#listAllIslandChainsOnTerraFirma {
     margin: 0px 20% 0px 20%;
     padding: 30px 30px;
     background-color: #bfdff9;
+}
+
+#blueBgd {
+    background-color: #bfdff9;
+}
+
+#profileWrapper {
+    height: fit-content;
+    margin: 0px 20% 0px 20%;
+}
+
+#welcomeToTheTeam {
+    grid-area: "welcomeToTheTeam";
+    text-align: center;
+
+}
+
+#profile {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-areas:
+        "profileImage profileBlurb";
+}
+
+#profileImage {
+    grid-area: "profileImage";
+}
+
+#profileImg {
+    height: 300px;
+}
+
+#profileBlurb {
+    grid-area: "profileBlurb";
 }
 
 footer {
@@ -154,7 +213,9 @@ footer {
     text-align: center;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     margin: 0px 0px 0px 0px;
     text-align: left;
     display: block;
