@@ -6,16 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/generalTemplateStylesheet.css">
-    <title>All Continents Template</title>
+    <title>JAC Enterprises Island Hopping Adventures</title>
 </head>
 
 <body>
 <div class="wrapper">
     <div id="contactBarBackground">
-        <div id="contactBar">Call toll-free <a href="">1-888-555-5555</a> or <a href="">CONTACT US</a></div>
+        <div id="contactBar">
+            Call toll-free <a href="tel:18885555555">1-888-555-5555</a> or
+            <a href="/#contactUsForm">CONTACT US</a>
+        </div>
     </div>
     <nav>
-        <div id="nav"><a href="/">Home</a> | <a href="/about-us">About Us</a> |
+        <div id="nav">
+            <a href="/">Home</a> | <a href="/about-us">About Us</a> |
             <div class="dropWrapper">
                 <button class="dropButton">Adventures</button>
                 <div class="dropContent">
@@ -25,50 +29,53 @@
                     <a href="/island-chains/">Search by Island Chain</a>
                 </div>
             </div>
-            | <a href="/#spotlightTrip">Spotlight Trip</a> | <a href="/#contactUsForm">Contact</a></div>
+            | <a href="/#spotlightTrip">Spotlight Trip</a> |
+            <a href="/#contactUsForm">Contact</a>
+        </div>
     </nav>
     <div id="bannerImage">
-        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br>Search for Your Destination by
-            Continent
+        <div id="bannerText"><span id="jacEntFontBoldSmall">JAC Enterprises</span>
+            <br>Search for Your Destination
+            <br> by Continent
         </div>
     </div>
     <div id="allContinentsInformation">
         <div id="allContinentsMap">
             <iframe
-                    src="https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#5.53/21.039/-157.84"
+                    src="https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#0.62/30.3/-27.5"
                     title="Monochrome">
             </iframe>
         </div>
-        <div id="allContinentsSummary">
-            <p>Lorem ipsum dolor sit amet. Est quasi praesentium aut galisum quibusdam 33 iure quasi ab tenetur
-                veniam et ited officiis quaerat eos tempore distinctio.</p>
-
-            <p>Est quis nobis At quidem natus est iste magni? Id debitis cumque sit praesentium reprehenderit sed
-                maxime voluptatem eum quia eveniet est dolorem consequatur hic autem sint.</p>
-
-            <p>Hic consequatur ducimus ut temporibus nemo ab atque neque. Ab sunt repellendus et blanditiis
-                voluptatem a veniam sunt ut consequatur quos. Ea ipsum iusto qui totam quia eos ipsam distinctio id
-                voluptatum cumque dolorem animi et voluptate assumenda aut iste repudiandae. Eum nesciunt quasi ut
-                nihil fugit ad ipsa optio aut amet explicabo est quisquam minus ut galisum mollitia id accusamus
-                fugit.</p>
+        <div id="allContinentsOnTerraFirma">
+            <div id="listAllContinentsOnTerraFirma">
+                <h1>Continents</h1>
+                <ol>
+                    <li th:each="continents:${continents}">
+                        <a class="continent-list-link" th:href="@{'/continent/'+ ${continents.id}}"
+                           th:text="${continents.continentName}">List Coming Soon!</a>
+                    </li>
+                </ol>
+            </div>
         </div>
     </div>
-    <div id="allContinentsOnTerraFirma">
-        <div id="listAllContinentsOnTerraFirma">
-            <h2>North America</h2>
-            <ul>
-                <li th:each="continents:${continents}">
-                    <a class="continent-list-link" th:href="@{'/continent/'+ ${continents.id}}"
-                       th:text="${continents.continentName}">List Coming Soon!</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!--    <div id="allContinentsOnTerraFirma">-->
+    <!--        <div id="listAllContinentsOnTerraFirma">-->
+    <!--            <h2>North America</h2>-->
+    <!--            <ul>-->
+    <!--                <li th:each="continents:${continents}">-->
+    <!--                    <a class="continent-list-link" th:href="@{'/continent/'+ ${continents.id}}"-->
+    <!--                       th:text="${continents.continentName}">List Coming Soon!</a>-->
+    <!--                </li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+    <!--    </div>-->
 
     <footer>
         <div id="footer">JAC Enterprises &copy; 2021</div>
     </footer>
 </div>
 </body>
+
+</html>
 
 </html>

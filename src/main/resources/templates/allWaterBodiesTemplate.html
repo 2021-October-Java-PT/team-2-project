@@ -6,16 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/generalTemplateStylesheet.css">
-    <title>All Bodies of Water Template</title>
+    <title>JAC Enterprises Island Hopping Adventures</title>
 </head>
 
 <body>
 <div class="wrapper">
     <div id="contactBarBackground">
-        <div id="contactBar">Call toll-free <a href="">1-888-555-5555</a> or <a href="">CONTACT US</a></div>
+        <div id="contactBar">
+            Call toll-free <a href="tel:18885555555">1-888-555-5555</a> or
+            <a href="/#contactUsForm">CONTACT US</a>
+        </div>
     </div>
     <nav>
-        <div id="nav"><a href="/">Home</a> | <a href="/about-us">About Us</a> |
+        <div id="nav">
+            <a href="/">Home</a> | <a href="/about-us">About Us</a> |
             <div class="dropWrapper">
                 <button class="dropButton">Adventures</button>
                 <div class="dropContent">
@@ -25,10 +29,13 @@
                     <a href="/island-chains/">Search by Island Chain</a>
                 </div>
             </div>
-            | <a href="/#spotlightTrip">Spotlight Trip</a> | <a href="/#contactUsForm">Contact</a></div>
+            | <a href="/#spotlightTrip">Spotlight Trip</a> |
+            <a href="/#contactUsForm">Contact</a>
+        </div>
     </nav>
     <div id="bannerImage">
-        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br>Search for Your Destination
+        <div id="bannerText"><span id="jacEntFontBoldSmall">JAC Enterprises</span>
+            <br>Search for Your Destination
             </br>by Waterway
         </div>
     </div>
@@ -39,23 +46,29 @@
                     title="Monochrome">
             </iframe>
         </div>
-        <div id="allBodiesOfWaterSummary">
-            <p>Wanting find your next adventure is a specific water region?</p>
-
-            <p>Check out our list below to see where we offer adventures in various oceans, seas and waterways!</p>
+        <div id="allBodiesOfWaterOnTerraFirma">
+            <div id="listOfBodiesOfWaterOnTerraFirma">
+                <h1>Water Region</h1>
+                <ul>
+                    <li th:each="waterBodies:${waterBodies}">
+                        <a class="water-body-list-link" th:href="@{'/water-body/'+ ${waterBodies.id}}"
+                           th:text="${waterBodies.waterBodyName}">List Coming Soon!</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div id="allBodiesOfWaterOnTerraFirma">
-        <div id="listOfBodiesOfWaterOnTerraFirma">
-            <h1>Water Region</h1>
-            <ul>
-                <li th:each="waterBodies:${waterBodies}">
-                    <a class="water-body-list-link" th:href="@{'/water-body/'+ ${waterBodies.id}}"
-                       th:text="${waterBodies.waterBodyName}">List Coming Soon!</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!--    <div id="allBodiesOfWaterOnTerraFirma">-->
+    <!--        <div id="listOfBodiesOfWaterOnTerraFirma">-->
+    <!--            <h1>Water Region</h1>-->
+    <!--            <ul>-->
+    <!--                <li th:each="waterBodies:${waterBodies}">-->
+    <!--                    <a class="water-body-list-link" th:href="@{'/water-body/'+ ${waterBodies.id}}"-->
+    <!--                       th:text="${waterBodies.waterBodyName}">List Coming Soon!</a>-->
+    <!--                </li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+    <!--    </div>-->
 
     <footer>
         <div id="footer">JAC Enterprises &copy; 2021</div>
