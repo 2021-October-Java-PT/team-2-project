@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -36,12 +36,24 @@
     <div id="bannerImage">
         <div id="bannerText"><span id="jacEntFontBoldSmall">JAC Enterprises</span>
             <br>IslandChainThymeLeafHere
+    <div id="bannerImage" >
+        <div id="bannerText"><span id="jacEntFontLightSmall">JAC Enterprises</span><br th:each="islandChain:${islandChain}" th:text="${islandChain.islandName}">
         </div>
     </div>
     <div id="highlightedAdventure">
         <div id="adventureImage"></div>
         <div id="adventureDescription">
             <p>IslandChainSummaryThymeLeafHere</p>
+            <p>Lorem ipsum dolor sit amet. Est quasi praesentium aut galisum quibusdam 33 iure quasi ab tenetur
+                veniam et ited officiis quaerat eos tempore distinctio.</p>
+
+            <p>pork</p>
+
+            <p>Hic consequatur ducimus ut temporibus nemo ab atque neque. Ab sunt repellendus et blanditiis
+                voluptatem a veniam sunt ut consequatur quos. Ea ipsum iusto qui totam quia eos ipsam distinctio id
+                voluptatum cumque dolorem animi et voluptate assumenda aut iste repudiandae. Eum nesciunt quasi ut
+                nihil fugit ad ipsa optio aut amet explicabo est quisquam minus ut galisum mollitia id accusamus
+                fugit.</p>
         </div>
     </div>
     <div id="locationOnMap">
@@ -52,6 +64,9 @@
                 <li>Day 2: ThymeleafHere</li>
                 <li>Day 3: ThymeleafHere</li>
                 <li>Day 4: ThymeleafHere</li>
+                <li th:each="islandChain:${islandChain}" th:text="${islandChain.itinerary.day1}" ></li>
+                <li th:each="islandChain:${islandChain}" th:text="${islandChain.itinerary.day2}">Day 2:</li>
+                <li th:each="islandChain:${islandChain}" th:text="${islandChain.itinerary.day3}">Day 3: Kauai</li>
             </ol>
         </div>
         <div id="map">
@@ -73,6 +88,11 @@
                 <li>ThymeleafHere</li>
                 <li>ThymeleafHere</li>
                 <li>ThymeleafHere</li>
+                <li th:each="islandChain:${islandChain}" th:text="${islandChain.packList.item1}">Sunscreen</li>
+                <li th:each="islandChain:${islandChain}" th:text="${islandChain.packList.item2}">Waterproof Phone Case</li>
+                <li th:each="islandChain:${islandChain}" th:text="${islandChain.packList.item3}">Cooling Towel</li>
+                <li th:each="islandChain:${islandChain}" th:text="${islandChain.packList.item4}">Waterproof Camera</li>
+                <li th:each="islandChain:${islandChain}" th:text="${islandChain.packList.item5}">Swimsuit</li>
             </ul>
         </div>
         <div id="packingImage"></div>

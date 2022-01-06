@@ -82,6 +82,7 @@ public class Populator implements CommandLineRunner {
 
         CountryModel colombia = new CountryModel("Colombia",southAmerica,"Colombia, officially the Republic of Colombia, is a transcontinental country spanning South America and an insular region in North America.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#3.75/2.69/-72.71");
         countryRepo.save(colombia);
+      
         CountryModel croatia = new CountryModel("Croatia",europe,"Croatia, officially the Republic of Croatia, is a country at the crossroads of Central and Southeast Europe on the Adriatic Sea.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#3.19/43.84/18.31");
         countryRepo.save(croatia);
 
