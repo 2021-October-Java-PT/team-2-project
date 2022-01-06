@@ -101,9 +101,6 @@ public class Populator implements CommandLineRunner {
         CountryModel madagascarCountry = new CountryModel("Madagascar", africa, "Madagascar, officially the Republic of Madagascar, and previously known as the Malagasy Republic, is an island country in the Indian Ocean, approximately 400 kilometres off the coast of East Africa across the Mozambique Channel.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#4.61/-19.14/46.74");
         countryRepo.save(madagascarCountry);
 
-        CountryModel republicOfCaboVerde = new CountryModel("Republic of Cabo Verde",africa,"Cape Verde or Cabo Verde, officially the Republic of Cabo Verde, is an archipelago and island country in the central Atlantic Ocean, consisting of ten volcanic islands with a combined land area of about 4,033 square kilometres.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#3.65/16.94/-25.01");
-      // missing repo save
-      
         CountryModel countryPhilippines = new CountryModel("Philippines", asia, "For God, People, Nature, and Country", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#4.26/12.04/123.51");
         countryRepo.save(countryPhilippines);
 
@@ -113,9 +110,6 @@ public class Populator implements CommandLineRunner {
         CountryModel republicOfSeychelles = new CountryModel("Republic Of Seychelles", africa, "The Seychelles is an archipelago of 115 islands in the Indian Ocean, off East Africa. It's home to numerous beaches, coral reefs and nature reserves, as well as rare animals such as giant Aldabra tortoises. Mahé, a hub for visiting the other islands, is home to capital Victoria. It also has the mountain rainforests of Morne Seychellois National Park and beaches, including Beau Vallon and Anse Takamaka. ", "https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#4.92/-6.91/52.37");
         countryRepo.save(republicOfSeychelles);
 
-        CountryModel tanzania = new CountryModel("Tanzanian",africa,"Tanzania is an East African country known for its vast wilderness areas. They include the plains of Serengeti National Park, a safari mecca populated by the “big five” game (elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s highest mountain. Offshore lie the tropical islands of Zanzibar, with Arabic influences, and Mafia, with a marine park home to whale sharks and coral reefs.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#3.43/-5.92/33.81");
-      // missing repo save
-      
         CountryModel spain = new CountryModel("Spain", europe, "Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct. Catalonia’s capital, Barcelona, is defined by Antoni Gaudí’s whimsical modernist landmarks like the Sagrada Família church.", "https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#3.5/40.47/-3.49");
         countryRepo.save(spain);
 
@@ -171,18 +165,6 @@ public class Populator implements CommandLineRunner {
 
         WaterBodyModel jintotoloChannel = new WaterBodyModel("Jintotolo Channel","The Jintotolo Channel is the body of water that connects the Sibuyan Sea with the Visayan Sea. It is located between the Philippine islands of Panay and Masbate, and is an important shipping route to and from the Central Visayas.","https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#10.98/11.5697/123.2154");
         waterBodyRepo.save(jintotoloChannel);
-      
-        WaterBodyModel indianOcean = new WaterBodyModel("Indian Ocean", "The Indian Ocean has been known by its present name since at least 1515 when the Latin form Oceanus Orientalis Indicus (\"Indian Eastern Ocean\") is attested, named for India, which projects into it. It was earlier known as the Eastern Ocean, a term that was still in use during the mid-18th century (see map), as opposed to the Western Ocean (Atlantic) before the Pacific was surmised.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#1.66/-3.7/74.7");
-        waterBodyRepo.save(indianOcean);
-
-        WaterBodyModel ionianSea = new WaterBodyModel("Ionian Sea", "The Ionian Sea is an elongated bay of the Mediterranean Sea. It is connected to the Adriatic Sea to the north, and is bounded by Southern Italy, including Calabria, Sicily, and the Salento peninsula to the west, southern Albania to the north, and the west coast of Greece, including the Peloponnese.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#5.43/38.797/19.173");
-        waterBodyRepo.save(ionianSea);
-
-        WaterBodyModel jintotoloChannel = new WaterBodyModel("Jintotolo Channel", "The Jintotolo Channel is the body of water that connects the Sibuyan Sea with the Visayan Sea. It is located between the Philippine islands of Panay and Masbate, and is an important shipping route to and from the Central Visayas.", "https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#10.98/11.5697/123.2154");
-        waterBodyRepo.save(jintotoloChannel);
-
-        WaterBodyModel lakeErie = new WaterBodyModel("Lake Erie", "A place where time moves a little slower, loved ones feel a little closer and there's a Great Lake between you and your worries. From island hopping to birdwatching, record-breaking roller coasters to water parks, wineries to dockside dining, plus hidden gems that keep the fun going all year long. However you like to coast – you'll find it here.", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#5.49/42.268/-80.862\n");
-        waterBodyRepo.save(lakeErie);
 
         WaterBodyModel mediterraneanSea = new WaterBodyModel("Mediterranean Sea", "The Mediterranean Sea is a sea connected to the Atlantic Ocean, surrounded by the Mediterranean Basin and almost completely enclosed by land: on the north by Western and Southern Europe and Anatolia, on the south by North Africa, and on the east by the Levant.", "https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#4.67/34.29/23.75");
         waterBodyRepo.save(mediterraneanSea);
@@ -305,33 +287,6 @@ public class Populator implements CommandLineRunner {
 
         IslandChainModel ionianIslands = new IslandChainModel("The Ionian Islands", greece, ionianSea, bassIslandsItinerary, bassIslandsPackList, "SUMMARY_HERE", "");
         islandChainRepo.save(ionianIslands);
-
-
-//        IslandChainModel bermuda = new IslandChainModel("Bermuda Islands", uk, aegeanSea, bassIslandsItinerary, bassIslandsPackList);
-//        islandChainRepo.save(bermuda);
-//
-//        IslandChainModel santorini = new IslandChainModel("Santorini Island", greece, aegeanSea);
-//        islandChainRepo.save(santorini);
-//
-//        IslandChainModel balearicIslands = new IslandChainModel("Balearic Islands", spain, ionianSea);
-//        islandChainRepo.save(balearicIslands);
-//
-//        IslandChainModel campanianIslands = new IslandChainModel("Campanian Archipelago", italy, tyrrhenianSea);
-//        islandChainRepo.save(campanianIslands);
-//
-//        IslandChainModel hawaiianIslands = new IslandChainModel("Hawaiian Islands", usa, pacificOcean);
-//        islandChainRepo.save(hawaiianIslands);
-//
-//        IslandChainModel koSamui = new IslandChainModel("Koh Samui", thailand, gulfOfThailand);
-//        islandChainRepo.save(koSamui);
-//
-//        IslandChainModel caboVerde = new IslandChainModel("Cabo Verde", republicOfCaboVerde, atlanticOcean);
-//        islandChainRepo.save(caboVerde);
-//
-//        IslandChainModel seychelles = new IslandChainModel("Seychelles Islands", seychellesRepublic, indianOcean);
-//        islandChainRepo.save(seychelles);
-//
-//        IslandChainModel philippines = new IslandChainModel("Philippines", countryPhilippines, southChinaSea, bassIslandsItinerary, bassIslandsPackList);
-//        islandChainRepo.save(philippines);
+        
     }
 }
