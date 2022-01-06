@@ -52,6 +52,7 @@
     </div>
     <div id="islandsInWaterBody">
         <div id="listOfIslandChains">
+            <h1>Island Chains</h1>
             <ol>
                 <li class="water-body-list-links__water-body" th:each="islandChain:${waterBody.islandChains}">
                     <a class="water-body-list-link" th:href="@{'/island-chains/'+ ${islandChain.id}}"
