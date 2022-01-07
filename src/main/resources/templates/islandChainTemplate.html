@@ -75,10 +75,8 @@
                 </li>
             </ol>
         </div>
-        <div id="map">
-            <iframe
-                    src="https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#5.53/21.039/-157.84"
-                    title="Monochrome"></iframe>
+        <div id="map" th:each="islandChain:${islandChain}">
+            <iframe th:src="${islandChain.islandMapUrL}"></iframe>
         </div>
     </div>
     <div id="whatToPack">
@@ -93,7 +91,9 @@
                 <li th:each="islandChain:${islandChain}" th:text="${islandChain.packList.item5}">Swimsuit</li>
             </ol>
         </div>
-        <div id="packingImage"></div>
+        <div id="packingImage" >
+            <img  th:src="@{islandChain.islandMapUrl}">
+        </div>
     </div>
     <footer>
         <div id="footer">JAC Enterprises &copy; 2021</div>

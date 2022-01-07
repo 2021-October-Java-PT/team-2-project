@@ -13,8 +13,6 @@ public class WaterBodyModel {
     private String waterBodyDescription;
     @Lob
     private String waterBodyMapUrl;
-
-
     @OneToMany(mappedBy = "waterBody")
     private Collection<IslandChainModel> islandChains;
 

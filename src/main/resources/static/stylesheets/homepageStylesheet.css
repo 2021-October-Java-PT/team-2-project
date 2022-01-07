@@ -96,14 +96,14 @@ nav {
     margin: 10px 20% 10px 20%;
     height: auto;
     display: grid;
-    grid-template-columns: 35% 1fr;
+    grid-template-columns: 45% 1fr;
     grid-template-areas:
         "spotlightTripImage spotlightTripText";
 }
 
 #spotlightTripImage {
     grid-area: "spotlightTripImage";
-    background-image: url(/images/farris-wheel-image.JPG);
+    background-image: url(/images/south-bass-island.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 8px;
@@ -134,7 +134,7 @@ nav {
 
 #islandHoppingImage {
     grid-area: "islandHoppingImage";
-    background-image: url(/images/farris-wheel-image.JPG);
+    background-image: url(/images/island-hopping.JPG);
     background-position: center;
     background-size: cover;
     border-radius: 8px;
@@ -145,30 +145,42 @@ nav {
     padding: 20px 10px 20px 10px;
 }
 
-#contactUsWrapper {
+#contactUsForm {
     margin: 20px 20% 20px 20%;
     height: 400px;
 }
 
-#contactUsForm {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "contactUsFormClm1 contactUsFormClm2";
-    column-gap: 20px;
+table {
+    width: 100%;
 }
 
-#contactUsFormClm1 {
-    grid-area: "contactUsFormClm1";
+label {
+    padding: 5px 0 2px 0;
 }
 
-#contactUsFormClm2 {
-    grid-area: "contactUsFormClm2";
+.rightGap {
+    margin-right: 20px;
+}
+
+.leftGap {
+    margin-left: 20px;
 }
 
 textarea {
     width: 100%;
     height: 150px;
+    margin: 0 30px 0 0;
+}
+
+.submitButton {
+    width: 100%;
+    height: 30px;
+    font-size: large;
+    margin: 0 30px 0 0;
+    background-color: #bfdff9;
+    color: black;
+    border-radius: 8px;
+    border: black solid 1px;
 }
 
 footer {
@@ -219,6 +231,10 @@ a {
 
 a:hover {
     color: #FFF;
+}
+
+#centerCapBoldText a:hover {
+    color: #60330A;
 }
 
 input {
