@@ -1,9 +1,6 @@
 package org.wecancodeit.com.project.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 @Entity
 public class ItineraryModel {
@@ -14,10 +11,13 @@ public class ItineraryModel {
     @OneToOne
     private IslandChainModel islandChain;
     private String day1;
+    @Lob
     private String day1Activities;
     private String day2;
+    @Lob
     private String day2Activities;
     private String day3;
+    @Lob
     private String day3Activities;
 
     public Long getId() {

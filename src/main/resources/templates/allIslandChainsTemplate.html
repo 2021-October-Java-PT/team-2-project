@@ -50,8 +50,10 @@
             <div id="listAllIslandChainsOnTerraFirma">
                 <h1>Island Chains</h1>
                 <ol>
-                    <li th:each="islandChains:${islandChains}"><a class="island-chains-list-link" th:href="@{'/island-chains/'+ ${islandChains.id}}"
-                                                                  th:text="${islandChains.islandName}">List Coming Soon!</a></li>
+                    <li th:each="islandChains:${islandChains}"><a class="island-chains-list-link"
+                                                                  th:href="@{'/island-chains/'+ ${islandChains.id}}"
+                                                                  th:text="${islandChains.islandName}">List Coming
+                        Soon!</a></li>
                 </ol>
             </div>
         </div>
