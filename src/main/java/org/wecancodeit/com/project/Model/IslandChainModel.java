@@ -21,6 +21,7 @@ public class IslandChainModel {
     private String adventureSummary;
     @Lob
     private String islandMapUrL;
+    private String islandImage;
 
 
     public Long getId() {
@@ -55,7 +56,11 @@ public class IslandChainModel {
         return islandMapUrL;
     }
 
-    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel waterBody, ItineraryModel itinerary, PackListModel packList, String adventureSummary, String islandMapUrL) {
+    public String getIslandImage() {
+        return islandImage;
+    }
+
+    public IslandChainModel(String islandName, CountryModel country, WaterBodyModel waterBody, ItineraryModel itinerary, PackListModel packList, String adventureSummary, String islandMapUrL, String islandImage) {
         this.islandName = islandName;
         this.country = country;
         this.waterBody = waterBody;
@@ -63,6 +68,7 @@ public class IslandChainModel {
         this.packList = packList;
         this.adventureSummary = adventureSummary;
         this.islandMapUrL = islandMapUrL;
+        this.islandImage = islandImage;
     }
 
     public IslandChainModel() {
