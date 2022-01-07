@@ -53,7 +53,7 @@ public class Populator implements CommandLineRunner {
         ContinentModel australia = new ContinentModel("Australia", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#2.12/-24.53/133.78");
         ContinentModel europe = new ContinentModel("Europe", "https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#0.81/-6.6/-65.1");
         ContinentModel northAmerica = new ContinentModel("North America", "https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#0.96/55.9/-109.8");
-        ContinentModel southAmerica = new ContinentModel("South America", "");
+        ContinentModel southAmerica = new ContinentModel("South America", "https://api.mapbox.com/styles/v1/missmadisonrose/ckxpgq7sq0iqt14piwva3j92k.html?title=false&access_token=pk.eyJ1IjoibWlzc21hZGlzb25yb3NlIiwiYSI6ImNreHBmd2JpZjd0ZGwydXEzMTZrMThjcXQifQ.Ubq6kw0wIFtQMKZunE0gyg&zoomwheel=false#1.88/-24.14/-60.39");
         continentRepo.save(africa);
         continentRepo.save(asia);
         continentRepo.save(australia);
