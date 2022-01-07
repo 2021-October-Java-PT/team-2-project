@@ -14,10 +14,8 @@ public class CountryModel {
     private String countryDescription;
     @Lob
     private String countryMapUrl;
-
     @ManyToOne
     private ContinentModel continent;
-
     @OneToMany(mappedBy = "country")
     private Collection<IslandChainModel> islandChains;
 
@@ -46,14 +44,14 @@ public class CountryModel {
         return continent;
     }
 
-    public CountryModel() {
-    }
-
     public CountryModel(String countryName, ContinentModel continent, String countryDescription, String countryMapUrl) {
         this.countryName = countryName;
         this.continent = continent;
         this.countryDescription = countryDescription;
         this.countryMapUrl = countryMapUrl;
+    }
+
+    public CountryModel() {
     }
 }
 
