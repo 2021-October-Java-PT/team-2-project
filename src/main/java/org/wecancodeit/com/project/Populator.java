@@ -273,20 +273,7 @@ public class Populator implements CommandLineRunner {
         IslandChainModel sanAndresIsland = new IslandChainModel("San Andres", colombia, caribbeanSea, bassIslandsItinerary, bassIslandsPackList, "SUMMARY_HERE", "https://api.mapbox.com/styles/v1/mbarkley23/cky2c4rxe1pu815nzdmq48ta6.html?title=copy&access_token=pk.eyJ1IjoibWJhcmtsZXkyMyIsImEiOiJja3kyYzIyY2Qwamt4MzN0NWt5N2lhdWswIn0.rxZNbrc8-0SzQlOABDaubQ&zoomwheel=true&fresh=true#7.19/12.705/-81.587");
         islandChainRepo.save(sanAndresIsland);
 
-        IslandChainModel andamanIslands = new IslandChainModel("Andaman Islands", india, indianOcean, bassIslandsItinerary, bassIslandsPackList, "SUMMARY_HERE", "");
-        islandChainRepo.save(andamanIslands);
 
-        IslandChainModel bassIslands = new IslandChainModel("Bass Islands", canada, lakeErie, bassIslandsItinerary, bassIslandsPackList, "SUMMARY_HERE", "");
-        islandChainRepo.save(bassIslands);
-
-        IslandChainModel galapagosIslands = new IslandChainModel("Galápagos Islands", ecuador, pacificOcean, bassIslandsItinerary, bassIslandsPackList, "SUMMARY_HERE", "");
-        islandChainRepo.save(galapagosIslands);
-
-        IslandChainModel heardMcDonaldIslands = new IslandChainModel("Heard Island and the McDonald Islands", australiaCountry, indianOcean, bassIslandsItinerary, bassIslandsPackList, "SUMMARY_HERE", "");
-        islandChainRepo.save(heardMcDonaldIslands);
-
-        IslandChainModel ionianIslands = new IslandChainModel("The Ionian Islands", greece, ionianSea, bassIslandsItinerary, bassIslandsPackList, "SUMMARY_HERE", "");
-        islandChainRepo.save(ionianIslands);
         
     }
 }
