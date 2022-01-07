@@ -37,7 +37,6 @@ nav {
 .dropButton {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #7c862b;
-    /*padding: 16px;*/
     font-size: large;
     border: none;
 }
@@ -94,9 +93,9 @@ nav {
 
 #highlightedAdventure {
     margin: 0px 20% 0px 20%;
-    height: 400px;
+    height: fit-content;
     display: grid;
-    grid-template-columns: 35% 1fr;
+    grid-template-columns: 55% 1fr;
     grid-template-areas:
         "adventureImage adventureDescription";
     column-gap: 10px;
@@ -105,10 +104,13 @@ nav {
 
 #adventureImage {
     grid-area: "adventureImage";
-    background-image: url(/images/farris-wheel-image.JPG);
     background-position: center;
     background-size: cover;
     border-radius: 8px;
+}
+
+#adventureImg {
+    height: 300px;
 }
 
 #adventureDescription {
